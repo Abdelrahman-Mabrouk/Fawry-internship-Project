@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="184px" preserveAspectRatio="none" style="width:1368px;height:184px;background:#FFFFFF;" version="1.1" viewBox="0 0 1368 184" width="1368px" zoomAndPan="magnify"><defs/><g><!--MD5=[0560f5d09ec45366468d7ce86b2a6c48]
+class OutOfStockException--><g id="elem_OutOfStockException"><rect codeLine="6" fill="#FFFFFF" height="60.2969" id="OutOfStockException" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="294" x="712" y="117.5659"/><ellipse cx="781.75" cy="131.5659" fill="#FFFFFF" rx="9" ry="9" style="stroke:#000000;stroke-width:1.0;"/><path d="M784.7188,137.2065 Q784.1406,137.5034 783.5,137.644 Q782.8594,137.8003 782.1563,137.8003 Q779.6563,137.8003 778.3281,136.1597 Q777.0156,134.5034 777.0156,131.3784 Q777.0156,128.2534 778.3281,126.5972 Q779.6563,124.9409 782.1563,124.9409 Q782.8594,124.9409 783.5,125.0972 Q784.1563,125.2534 784.7188,125.5503 L784.7188,128.269 Q784.0938,127.6909 783.5,127.4253 Q782.9063,127.144 782.2813,127.144 Q780.9375,127.144 780.25,128.2222 Q779.5625,129.2847 779.5625,131.3784 Q779.5625,133.4722 780.25,134.5503 Q780.9375,135.6128 782.2813,135.6128 Q782.9063,135.6128 783.5,135.3472 Q784.0938,135.0659 784.7188,134.4878 L784.7188,137.2065 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="147" x="799.25" y="136.4126">OutOfStockException</text><line style="stroke:#000000;stroke-width:1.0;" x1="713" x2="1005" y1="145.5659" y2="145.5659"/><line style="stroke:#000000;stroke-width:1.0;" x1="713" x2="1005" y1="153.5659" y2="153.5659"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="282" x="718" y="170.561">+OutOfStockException(message: String)</text></g><!--MD5=[0f395c27384068911d2ebdff77b4614a]
+class ExpiredProductException--><g id="elem_ExpiredProductException"><rect codeLine="10" fill="#FFFFFF" height="60.2969" id="ExpiredProductException" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="320" x="1041" y="117.5659"/><ellipse cx="1110.75" cy="131.5659" fill="#FFFFFF" rx="9" ry="9" style="stroke:#000000;stroke-width:1.0;"/><path d="M1113.7188,137.2065 Q1113.1406,137.5034 1112.5,137.644 Q1111.8594,137.8003 1111.1563,137.8003 Q1108.6563,137.8003 1107.3281,136.1597 Q1106.0156,134.5034 1106.0156,131.3784 Q1106.0156,128.2534 1107.3281,126.5972 Q1108.6563,124.9409 1111.1563,124.9409 Q1111.8594,124.9409 1112.5,125.0972 Q1113.1563,125.2534 1113.7188,125.5503 L1113.7188,128.269 Q1113.0938,127.6909 1112.5,127.4253 Q1111.9063,127.144 1111.2813,127.144 Q1109.9375,127.144 1109.25,128.2222 Q1108.5625,129.2847 1108.5625,131.3784 Q1108.5625,133.4722 1109.25,134.5503 Q1109.9375,135.6128 1111.2813,135.6128 Q1111.9063,135.6128 1112.5,135.3472 Q1113.0938,135.0659 1113.7188,134.4878 L1113.7188,137.2065 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="173" x="1128.25" y="136.4126">ExpiredProductException</text><line style="stroke:#000000;stroke-width:1.0;" x1="1042" x2="1360" y1="145.5659" y2="145.5659"/><line style="stroke:#000000;stroke-width:1.0;" x1="1042" x2="1360" y1="153.5659" y2="153.5659"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="308" x="1047" y="170.561">+ExpiredProductException(message: String)</text></g><!--MD5=[705c4dee725989487ff22a58eeb72e9b]
+class InsufficientBalanceException--><g id="elem_InsufficientBalanceException"><rect codeLine="14" fill="#FFFFFF" height="60.2969" id="InsufficientBalanceException" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="344" x="12" y="117.5659"/><ellipse cx="81.75" cy="131.5659" fill="#FFFFFF" rx="9" ry="9" style="stroke:#000000;stroke-width:1.0;"/><path d="M84.7188,137.2065 Q84.1406,137.5034 83.5,137.644 Q82.8594,137.8003 82.1563,137.8003 Q79.6563,137.8003 78.3281,136.1597 Q77.0156,134.5034 77.0156,131.3784 Q77.0156,128.2534 78.3281,126.5972 Q79.6563,124.9409 82.1563,124.9409 Q82.8594,124.9409 83.5,125.0972 Q84.1563,125.2534 84.7188,125.5503 L84.7188,128.269 Q84.0938,127.6909 83.5,127.4253 Q82.9063,127.144 82.2813,127.144 Q80.9375,127.144 80.25,128.2222 Q79.5625,129.2847 79.5625,131.3784 Q79.5625,133.4722 80.25,134.5503 Q80.9375,135.6128 82.2813,135.6128 Q82.9063,135.6128 83.5,135.3472 Q84.0938,135.0659 84.7188,134.4878 L84.7188,137.2065 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="197" x="99.25" y="136.4126">InsufficientBalanceException</text><line style="stroke:#000000;stroke-width:1.0;" x1="13" x2="355" y1="145.5659" y2="145.5659"/><line style="stroke:#000000;stroke-width:1.0;" x1="13" x2="355" y1="153.5659" y2="153.5659"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="332" x="18" y="170.561">+InsufficientBalanceException(message: String)</text></g><!--MD5=[ddc587dabef0c739985796d347227f9a]
+class EmptyCartException--><g id="elem_EmptyCartException"><rect codeLine="18" fill="#FFFFFF" height="60.2969" id="EmptyCartException" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="286" x="391" y="117.5659"/><ellipse cx="460.75" cy="131.5659" fill="#FFFFFF" rx="9" ry="9" style="stroke:#000000;stroke-width:1.0;"/><path d="M463.7188,137.2065 Q463.1406,137.5034 462.5,137.644 Q461.8594,137.8003 461.1563,137.8003 Q458.6563,137.8003 457.3281,136.1597 Q456.0156,134.5034 456.0156,131.3784 Q456.0156,128.2534 457.3281,126.5972 Q458.6563,124.9409 461.1563,124.9409 Q461.8594,124.9409 462.5,125.0972 Q463.1563,125.2534 463.7188,125.5503 L463.7188,128.269 Q463.0938,127.6909 462.5,127.4253 Q461.9063,127.144 461.2813,127.144 Q459.9375,127.144 459.25,128.2222 Q458.5625,129.2847 458.5625,131.3784 Q458.5625,133.4722 459.25,134.5503 Q459.9375,135.6128 461.2813,135.6128 Q461.9063,135.6128 462.5,135.3472 Q463.0938,135.0659 463.7188,134.4878 L463.7188,137.2065 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="139" x="478.25" y="136.4126">EmptyCartException</text><line style="stroke:#000000;stroke-width:1.0;" x1="392" x2="676" y1="145.5659" y2="145.5659"/><line style="stroke:#000000;stroke-width:1.0;" x1="392" x2="676" y1="153.5659" y2="153.5659"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="274" x="397" y="170.561">+EmptyCartException(message: String)</text></g><!--MD5=[5c6c7d52e42032554528404b62c1d271]
+class RuntimeException--><g id="elem_RuntimeException"><rect fill="#FFFFFF" height="44" id="RuntimeException" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="154" x="491" y="13.5659"/><ellipse cx="504" cy="27.5659" fill="#FFFFFF" rx="9" ry="9" style="stroke:#000000;stroke-width:1.0;"/><path d="M506.9688,33.2065 Q506.3906,33.5034 505.75,33.644 Q505.1094,33.8003 504.4063,33.8003 Q501.9063,33.8003 500.5781,32.1597 Q499.2656,30.5034 499.2656,27.3784 Q499.2656,24.2534 500.5781,22.5972 Q501.9063,20.9409 504.4063,20.9409 Q505.1094,20.9409 505.75,21.0972 Q506.4063,21.2534 506.9688,21.5503 L506.9688,24.269 Q506.3438,23.6909 505.75,23.4253 Q505.1563,23.144 504.5313,23.144 Q503.1875,23.144 502.5,24.2222 Q501.8125,25.2847 501.8125,27.3784 Q501.8125,29.4722 502.5,30.5503 Q503.1875,31.6128 504.5313,31.6128 Q505.1563,31.6128 505.75,31.3472 Q506.3438,31.0659 506.9688,30.4878 L506.9688,33.2065 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="126" x="516" y="32.4126">RuntimeException</text><line style="stroke:#000000;stroke-width:1.0;" x1="492" x2="644" y1="41.5659" y2="41.5659"/><line style="stroke:#000000;stroke-width:1.0;" x1="492" x2="644" y1="49.5659" y2="49.5659"/></g><!--MD5=[d7911e186dfb4dcb5a5cc7f9a98616fc]
+class CheckoutValidator--><g id="elem_CheckoutValidator"><rect fill="#FFFFFF" height="44" id="CheckoutValidator" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="154" x="748" y="13.5659"/><ellipse cx="761" cy="27.5659" fill="#FFFFFF" rx="9" ry="9" style="stroke:#000000;stroke-width:1.0;"/><path d="M763.9688,33.2065 Q763.3906,33.5034 762.75,33.644 Q762.1094,33.8003 761.4063,33.8003 Q758.9063,33.8003 757.5781,32.1597 Q756.2656,30.5034 756.2656,27.3784 Q756.2656,24.2534 757.5781,22.5972 Q758.9063,20.9409 761.4063,20.9409 Q762.1094,20.9409 762.75,21.0972 Q763.4063,21.2534 763.9688,21.5503 L763.9688,24.269 Q763.3438,23.6909 762.75,23.4253 Q762.1563,23.144 761.5313,23.144 Q760.1875,23.144 759.5,24.2222 Q758.8125,25.2847 758.8125,27.3784 Q758.8125,29.4722 759.5,30.5503 Q760.1875,31.6128 761.5313,31.6128 Q762.1563,31.6128 762.75,31.3472 Q763.3438,31.0659 763.9688,30.4878 L763.9688,33.2065 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="126" x="773" y="32.4126">CheckoutValidator</text><line style="stroke:#000000;stroke-width:1.0;" x1="749" x2="901" y1="41.5659" y2="41.5659"/><line style="stroke:#000000;stroke-width:1.0;" x1="749" x2="901" y1="49.5659" y2="49.5659"/></g><!--MD5=[826329b892a1a1448765d558c8a24558]
+reverse link RuntimeException to OutOfStockException--><g id="link_RuntimeException_OutOfStockException"><path codeLine="23" d="M665.2,43.5659 C665.2,43.5659 730,43.5659 730,43.5659 C730,43.5659 730,86.7659 730,117.4859 " fill="none" id="RuntimeException-backto-OutOfStockException" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="none" points="665.2,50.5659,645.2,43.5659,665.2,36.5659,665.2,50.5659" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[12db45bc4297085a39b28e46d9ea3eeb]
+reverse link RuntimeException to ExpiredProductException--><g id="link_RuntimeException_ExpiredProductException"><path codeLine="24" d="M593.67,77.5959 C593.67,77.5959 593.67,97.5659 593.67,97.5659 C593.67,97.5659 1147.67,97.5659 1147.67,97.5659 C1147.67,97.5659 1147.67,106.7959 1147.67,117.3259 " fill="none" id="RuntimeException-backto-ExpiredProductException" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="none" points="586.67,77.5959,593.67,57.5959,600.67,77.5959,586.67,77.5959" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[ab741ba40f2b6c79d8a700f6be5ccb2e]
+reverse link RuntimeException to InsufficientBalanceException--><g id="link_RuntimeException_InsufficientBalanceException"><path codeLine="25" d="M470.87,35.5659 C470.87,35.5659 126.67,35.5659 126.67,35.5659 C126.67,35.5659 126.67,84.3759 126.67,117.5559 " fill="none" id="RuntimeException-backto-InsufficientBalanceException" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="none" points="470.87,28.5659,490.87,35.5659,470.87,42.5659,470.87,28.5659" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[10d249d96cec0bef7a9567ff4b4881e3]
+reverse link RuntimeException to EmptyCartException--><g id="link_RuntimeException_EmptyCartException"><path codeLine="26" d="M542.33,77.6959 C542.33,77.6959 542.33,117.4259 542.33,117.4259 " fill="none" id="RuntimeException-backto-EmptyCartException" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="none" points="535.33,77.6959,542.33,57.6959,549.33,77.6959,535.33,77.6959" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[fbdb44bb01fb9011c2a7cd88d0d001e6]
+link CheckoutValidator to OutOfStockException--><g id="link_CheckoutValidator_OutOfStockException"><path codeLine="29" d="M850.67,57.6959 C850.67,57.6959 850.67,112.4259 850.67,112.4259 " fill="none" id="CheckoutValidator-to-OutOfStockException" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="850.67,117.4259,854.67,108.4259,850.67,112.4259,846.67,108.4259,850.67,117.4259" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="42" x="807.67" y="81.1228">throws</text></g><!--MD5=[1767bf3ab039d4cb3b3235c2864268c2]
+link CheckoutValidator to ExpiredProductException--><g id="link_CheckoutValidator_ExpiredProductException"><path codeLine="30" d="M902.25,35.5659 C1025.86,35.5659 1254.33,35.5659 1254.33,35.5659 C1254.33,35.5659 1254.33,112.5559 1254.33,112.5559 " fill="none" id="CheckoutValidator-to-ExpiredProductException" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="1254.33,117.5559,1258.33,108.5559,1254.33,112.5559,1250.33,108.5559,1254.33,117.5559" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="42" x="1073.79" y="31.6328">throws</text></g><!--MD5=[e915494933ca8dfb6007844b0561b735]
+link CheckoutValidator to InsufficientBalanceException--><g id="link_CheckoutValidator_InsufficientBalanceException"><path codeLine="31" d="M799.33,58.0459 C799.33,68.0259 799.33,77.5659 799.33,77.5659 C799.33,77.5659 241.33,77.5659 241.33,77.5659 C241.33,77.5659 241.33,112.4759 241.33,112.4759 " fill="none" id="CheckoutValidator-to-InsufficientBalanceException" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="241.33,117.4759,245.33,108.4759,241.33,112.4759,237.33,108.4759,241.33,117.4759" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="42" x="469.64" y="73.6328">throws</text></g><!--MD5=[371f51dfa77ec98caae514bb63772e5a]
+link CheckoutValidator to EmptyCartException--><g id="link_CheckoutValidator_EmptyCartException"><path codeLine="32" d="M747.8,28.5659 C705.27,28.5659 661,28.5659 661,28.5659 C661,28.5659 661,112.5359 661,112.5359 " fill="none" id="CheckoutValidator-to-EmptyCartException" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="661,117.5359,665,108.5359,661,112.5359,657,108.5359,661,117.5359" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="42" x="663.42" y="24.6328">throws</text></g><!--MD5=[9817ccf330cb1c2c400d03e9e0901700]
+@startuml
+!theme plain
+skinparam classAttributeIconSize 0
+skinparam linetype ortho
+
+' ======= EXCEPTIONS =======
+class OutOfStockException {
+    +OutOfStockException(message: String)
+}
+
+class ExpiredProductException {
+    +ExpiredProductException(message: String)
+}
+
+class InsufficientBalanceException {
+    +InsufficientBalanceException(message: String)
+}
+
+class EmptyCartException {
+    +EmptyCartException(message: String)
+}
+
+' ======= EXCEPTION INHERITANCE =======
+RuntimeException <|- - OutOfStockException
+RuntimeException <|- - ExpiredProductException
+RuntimeException <|- - InsufficientBalanceException
+RuntimeException <|- - EmptyCartException
+
+' ======= EXCEPTION USAGE =======
+CheckoutValidator ..> OutOfStockException : throws
+CheckoutValidator ..> ExpiredProductException : throws
+CheckoutValidator ..> InsufficientBalanceException : throws
+CheckoutValidator ..> EmptyCartException : throws
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+<style>
+  root {
+    BackgroundColor white
+    FontColor black
+    FontName Verdana
+    HyperLinkColor blue
+    LineColor black
+    LineThickness 1
+    Margin 5
+  }
+  caption {
+    LineThickness 0
+  }
+  footer {
+    LineThickness 0
+  }
+  header {
+    LineThickness 0
+  }
+  node {
+    MaximumWidth 300
+  }
+  title {
+    FontSize 22
+    LineThickness 0
+  }
+</style>
+
+skinparam ArrowLollipopColor black
+skinparam BackgroundColor white
+skinparam DefaultFontName Verdana
+skinparam DefaultMonospacedFontName Courier
+skinparam LifelineStrategy nosolid
+skinparam ParticipantPadding 10
+skinparam SequenceLifeLineBorderColor black
+skinparam Shadowing false
+skinparam UseBetaStyle true
+
+skinparam Activity {
+  BackgroundColor white
+  BarColor black
+  BorderColor black
+  FontColor black
+  FontName Verdana
+}
+skinparam Boundary {
+  FontColor black
+}
+skinparam Box {
+  Padding 5
+}
+skinparam CircledCharacter {
+  FontColor black
+  FontName Courier
+  Radius 9
+}
+skinparam Class {
+  BackgroundColor white
+  BorderColor black
+  FontColor black
+  FontName Verdana
+}
+skinparam ClassAttribute {
+  FontColor black
+  FontName Verdana
+}
+skinparam ClassStereotype {
+  FontColor black
+  FontName Verdana
+}
+skinparam Footer {
+  FontColor black
+  FontName Verdana
+}
+skinparam Header {
+  FontColor black
+  FontName Verdana
+}
+skinparam Hyperlink {
+  Color blue
+}
+skinparam IconPackage {
+  Color black
+  BackgroundColor white
+}
+skinparam IconPrivate {
+  Color black
+  BackgroundColor white
+}
+skinparam IconProtected {
+  Color black
+  BackgroundColor white
+}
+skinparam IconPublic {
+  Color black
+  BackgroundColor white
+}
+skinparam Note {
+  FontColor black
+  FontName Verdana
+}
+skinparam Object {
+  BorderColor black
+}
+skinparam Package {
+  BorderColor black
+  FontColor black
+  FontName Verdana
+}
+skinparam State {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeA {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeC {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeE {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeI {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeN {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam UseCaseStereoType {
+  FontColor black
+  FontName Verdana
+}
+skinparam classAttributeIconSize 0
+skinparam linetype ortho
+
+class OutOfStockException {
+    +OutOfStockException(message: String)
+}
+
+class ExpiredProductException {
+    +ExpiredProductException(message: String)
+}
+
+class InsufficientBalanceException {
+    +InsufficientBalanceException(message: String)
+}
+
+class EmptyCartException {
+    +EmptyCartException(message: String)
+}
+
+RuntimeException <|- - OutOfStockException
+RuntimeException <|- - ExpiredProductException
+RuntimeException <|- - InsufficientBalanceException
+RuntimeException <|- - EmptyCartException
+
+CheckoutValidator ..> OutOfStockException : throws
+CheckoutValidator ..> ExpiredProductException : throws
+CheckoutValidator ..> InsufficientBalanceException : throws
+CheckoutValidator ..> EmptyCartException : throws
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 17:01:30 UTC 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>

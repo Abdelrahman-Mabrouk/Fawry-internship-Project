@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="1806px" preserveAspectRatio="none" style="width:3056px;height:1806px;background:#FFFFFF;" version="1.1" viewBox="0 0 3056 1806" width="3056px" zoomAndPan="magnify"><defs/><g><!--MD5=[834b946c3ef9e9f0170bb8cb50f980ef]
+class Shippable--><g id="elem_Shippable"><rect codeLine="6" fill="#FFFFFF" height="76.5938" id="Shippable" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="242" x="2378" y="1529.5"/><ellipse cx="2461.25" cy="1543.5" fill="#FFFFFF" rx="9" ry="9" style="stroke:#000000;stroke-width:1.0;"/><path d="M2457.1719,1539.2656 L2457.1719,1537.1094 L2464.5625,1537.1094 L2464.5625,1539.2656 L2462.0938,1539.2656 L2462.0938,1547.3438 L2464.5625,1547.3438 L2464.5625,1549.5 L2457.1719,1549.5 L2457.1719,1547.3438 L2459.6406,1547.3438 L2459.6406,1539.2656 L2457.1719,1539.2656 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="68" x="2478.75" y="1548.3467">Shippable</text><line style="stroke:#000000;stroke-width:1.0;" x1="2379" x2="2619" y1="1557.5" y2="1557.5"/><line style="stroke:#000000;stroke-width:1.0;" x1="2379" x2="2619" y1="1565.5" y2="1565.5"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="148" x="2384" y="1582.4951">+getweight(): double</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="230" x="2384" y="1598.792">+setweight(weight: double): void</text></g><!--MD5=[af4ef4192b3c7bef06509bcd54453b57]
+class Expirable--><g id="elem_Expirable"><rect codeLine="11" fill="#FFFFFF" height="92.8906" id="Expirable" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="301" x="538.5" y="1707"/><ellipse cx="654.25" cy="1721" fill="#FFFFFF" rx="9" ry="9" style="stroke:#000000;stroke-width:1.0;"/><path d="M650.1719,1716.7656 L650.1719,1714.6094 L657.5625,1714.6094 L657.5625,1716.7656 L655.0938,1716.7656 L655.0938,1724.8438 L657.5625,1724.8438 L657.5625,1727 L650.1719,1727 L650.1719,1724.8438 L652.6406,1724.8438 L652.6406,1716.7656 L650.1719,1716.7656 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="62" x="671.75" y="1725.8467">Expirable</text><line style="stroke:#000000;stroke-width:1.0;" x1="539.5" x2="838.5" y1="1735" y2="1735"/><line style="stroke:#000000;stroke-width:1.0;" x1="539.5" x2="838.5" y1="1743" y2="1743"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="149" x="544.5" y="1759.9951">+isExpired(): boolean</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="289" x="544.5" y="1776.292">+setExpirationDate(date: LocalDate): void</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="222" x="544.5" y="1792.5889">+getExpirationDate(): LocalDate</text></g><!--MD5=[72136138052d025cffdce3c22fbd185f]
+class Product--><g id="elem_Product"><rect codeLine="18" fill="#FFFFFF" height="223.2656" id="Product" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="364" x="1952" y="1053"/><ellipse cx="2103.25" cy="1067" fill="#FFFFFF" rx="9" ry="9" style="stroke:#000000;stroke-width:1.0;"/><path d="M2103.3594,1062.3438 L2102.2031,1067.4219 L2104.5313,1067.4219 L2103.3594,1062.3438 Z M2101.875,1060.1094 L2104.8594,1060.1094 L2108.2188,1072.5 L2105.7656,1072.5 L2105,1069.4375 L2101.7188,1069.4375 L2100.9688,1072.5 L2098.5313,1072.5 L2101.875,1060.1094 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="54" x="2120.75" y="1071.8467">Product</text><line style="stroke:#000000;stroke-width:1.0;" x1="1953" x2="2315" y1="1081" y2="1081"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="100" x="1958" y="1097.9951">#name: String</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="103" x="1958" y="1114.292">#price: double</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="93" x="1958" y="1130.5889">#quantity: int</text><line style="stroke:#000000;stroke-width:1.0;" x1="1953" x2="2315" y1="1137.8906" y2="1137.8906"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="352" x="1958" y="1154.8857">+Product(name: String, price: double, quantity: int)</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="134" x="1958" y="1171.1826">+getName(): String</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="209" x="1958" y="1187.4795">+setName(name: String): void</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="136" x="1958" y="1203.7764">+getPrice(): double</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="206" x="1958" y="1220.0732">+setPrice(price: double): void</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="128" x="1958" y="1236.3701">+getQuantity(): int</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="219" x="1958" y="1252.667">+setQuantity(quantity: int): void</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="246" x="1958" y="1268.9639">+reduceQuantity(quantity: int): void</text></g><!--MD5=[1c74c574b28f8407b76160f1e97cbae3]
+class ShippableProduct--><g id="elem_ShippableProduct"><rect codeLine="34" fill="#FFFFFF" height="92.8906" id="ShippableProduct" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="543" x="1594.5" y="1336"/><ellipse cx="1801.25" cy="1350" fill="#FFFFFF" rx="9" ry="9" style="stroke:#000000;stroke-width:1.0;"/><path d="M1801.3594,1345.3438 L1800.2031,1350.4219 L1802.5313,1350.4219 L1801.3594,1345.3438 Z M1799.875,1343.1094 L1802.8594,1343.1094 L1806.2188,1355.5 L1803.7656,1355.5 L1803,1352.4375 L1799.7188,1352.4375 L1798.9688,1355.5 L1796.5313,1355.5 L1799.875,1343.1094 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="122" x="1818.75" y="1354.8467">ShippableProduct</text><line style="stroke:#000000;stroke-width:1.0;" x1="1595.5" x2="2136.5" y1="1364" y2="1364"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="115" x="1600.5" y="1380.9951">#weight: double</text><line style="stroke:#000000;stroke-width:1.0;" x1="1595.5" x2="2136.5" y1="1388.2969" y2="1388.2969"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="531" x="1600.5" y="1405.292">+ShippableProduct(name: String, price: double, quantity: int, weight: double)</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="150" x="1600.5" y="1421.5889">+getWeight(): double</text></g><!--MD5=[a296a293b2cfba442aa92a1cd2074d3e]
+class NonShippableProduct--><g id="elem_NonShippableProduct"><rect codeLine="40" fill="#FFFFFF" height="60.2969" id="NonShippableProduct" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="460" x="2397" y="1352.5"/><ellipse cx="2548.25" cy="1366.5" fill="#FFFFFF" rx="9" ry="9" style="stroke:#000000;stroke-width:1.0;"/><path d="M2548.3594,1361.8438 L2547.2031,1366.9219 L2549.5313,1366.9219 L2548.3594,1361.8438 Z M2546.875,1359.6094 L2549.8594,1359.6094 L2553.2188,1372 L2550.7656,1372 L2550,1368.9375 L2546.7188,1368.9375 L2545.9688,1372 L2543.5313,1372 L2546.875,1359.6094 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="150" x="2565.75" y="1371.3467">NonShippableProduct</text><line style="stroke:#000000;stroke-width:1.0;" x1="2398" x2="2856" y1="1380.5" y2="1380.5"/><line style="stroke:#000000;stroke-width:1.0;" x1="2398" x2="2856" y1="1388.5" y2="1388.5"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="448" x="2403" y="1405.4951">+NonShippableProduct(name: String, price: double, quantity: int)</text></g><!--MD5=[6a2897fb52bc57835b526dc756c6e029]
+class Cheese--><g id="elem_Cheese"><rect codeLine="45" fill="#FFFFFF" height="158.0781" id="Cheese" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="660" x="12" y="1489"/><ellipse cx="311.25" cy="1503" fill="#FFFFFF" rx="9" ry="9" style="stroke:#000000;stroke-width:1.0;"/><path d="M314.2188,1508.6406 Q313.6406,1508.9375 313,1509.0781 Q312.3594,1509.2344 311.6563,1509.2344 Q309.1563,1509.2344 307.8281,1507.5938 Q306.5156,1505.9375 306.5156,1502.8125 Q306.5156,1499.6875 307.8281,1498.0313 Q309.1563,1496.375 311.6563,1496.375 Q312.3594,1496.375 313,1496.5313 Q313.6563,1496.6875 314.2188,1496.9844 L314.2188,1499.7031 Q313.5938,1499.125 313,1498.8594 Q312.4063,1498.5781 311.7813,1498.5781 Q310.4375,1498.5781 309.75,1499.6563 Q309.0625,1500.7188 309.0625,1502.8125 Q309.0625,1504.9063 309.75,1505.9844 Q310.4375,1507.0469 311.7813,1507.0469 Q312.4063,1507.0469 313,1506.7813 Q313.5938,1506.5 314.2188,1505.9219 L314.2188,1508.6406 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="54" x="328.75" y="1507.8467">Cheese</text><line style="stroke:#000000;stroke-width:1.0;" x1="13" x2="671" y1="1517" y2="1517"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="182" x="18" y="1533.9951">-expirationDate: LocalDate</text><line style="stroke:#000000;stroke-width:1.0;" x1="13" x2="671" y1="1541.2969" y2="1541.2969"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="648" x="18" y="1558.292">+Cheese(name: String, price: double, quantity: int, weight: double, expirationDate: LocalDate)</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="148" x="18" y="1574.5889">+getweight(): double</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="230" x="18" y="1590.8857">+setweight(weight: double): void</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="222" x="18" y="1607.1826">+getExpirationDate(): LocalDate</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="358" x="18" y="1623.4795">+setExpirationDate(expirationDate: LocalDate): void</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="149" x="18" y="1639.7764">+isExpired(): boolean</text></g><!--MD5=[8c4bb6e839ab5a04951ba7ee2d837441]
+class Biscuits--><g id="elem_Biscuits"><rect codeLine="55" fill="#FFFFFF" height="158.0781" id="Biscuits" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="660" x="707" y="1489"/><ellipse cx="1006.25" cy="1503" fill="#FFFFFF" rx="9" ry="9" style="stroke:#000000;stroke-width:1.0;"/><path d="M1009.2188,1508.6406 Q1008.6406,1508.9375 1008,1509.0781 Q1007.3594,1509.2344 1006.6563,1509.2344 Q1004.1563,1509.2344 1002.8281,1507.5938 Q1001.5156,1505.9375 1001.5156,1502.8125 Q1001.5156,1499.6875 1002.8281,1498.0313 Q1004.1563,1496.375 1006.6563,1496.375 Q1007.3594,1496.375 1008,1496.5313 Q1008.6563,1496.6875 1009.2188,1496.9844 L1009.2188,1499.7031 Q1008.5938,1499.125 1008,1498.8594 Q1007.4063,1498.5781 1006.7813,1498.5781 Q1005.4375,1498.5781 1004.75,1499.6563 Q1004.0625,1500.7188 1004.0625,1502.8125 Q1004.0625,1504.9063 1004.75,1505.9844 Q1005.4375,1507.0469 1006.7813,1507.0469 Q1007.4063,1507.0469 1008,1506.7813 Q1008.5938,1506.5 1009.2188,1505.9219 L1009.2188,1508.6406 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="54" x="1023.75" y="1507.8467">Biscuits</text><line style="stroke:#000000;stroke-width:1.0;" x1="708" x2="1366" y1="1517" y2="1517"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="182" x="713" y="1533.9951">-expirationDate: LocalDate</text><line style="stroke:#000000;stroke-width:1.0;" x1="708" x2="1366" y1="1541.2969" y2="1541.2969"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="648" x="713" y="1558.292">+Biscuits(name: String, price: double, quantity: int, weight: double, expirationDate: LocalDate)</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="148" x="713" y="1574.5889">+getweight(): double</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="230" x="713" y="1590.8857">+setweight(weight: double): void</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="222" x="713" y="1607.1826">+getExpirationDate(): LocalDate</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="358" x="713" y="1623.4795">+setExpirationDate(expirationDate: LocalDate): void</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="149" x="713" y="1639.7764">+isExpired(): boolean</text></g><!--MD5=[9022e2192881f166c529fc3ae75dec7b]
+class TV--><g id="elem_TV"><rect codeLine="65" fill="#FFFFFF" height="92.8906" id="TV" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="439" x="1402.5" y="1521.5"/><ellipse cx="1609.25" cy="1535.5" fill="#FFFFFF" rx="9" ry="9" style="stroke:#000000;stroke-width:1.0;"/><path d="M1612.2188,1541.1406 Q1611.6406,1541.4375 1611,1541.5781 Q1610.3594,1541.7344 1609.6563,1541.7344 Q1607.1563,1541.7344 1605.8281,1540.0938 Q1604.5156,1538.4375 1604.5156,1535.3125 Q1604.5156,1532.1875 1605.8281,1530.5313 Q1607.1563,1528.875 1609.6563,1528.875 Q1610.3594,1528.875 1611,1529.0313 Q1611.6563,1529.1875 1612.2188,1529.4844 L1612.2188,1532.2031 Q1611.5938,1531.625 1611,1531.3594 Q1610.4063,1531.0781 1609.7813,1531.0781 Q1608.4375,1531.0781 1607.75,1532.1563 Q1607.0625,1533.2188 1607.0625,1535.3125 Q1607.0625,1537.4063 1607.75,1538.4844 Q1608.4375,1539.5469 1609.7813,1539.5469 Q1610.4063,1539.5469 1611,1539.2813 Q1611.5938,1539 1612.2188,1538.4219 L1612.2188,1541.1406 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="18" x="1626.75" y="1540.3467">TV</text><line style="stroke:#000000;stroke-width:1.0;" x1="1403.5" x2="1840.5" y1="1549.5" y2="1549.5"/><line style="stroke:#000000;stroke-width:1.0;" x1="1403.5" x2="1840.5" y1="1557.5" y2="1557.5"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="427" x="1408.5" y="1574.4951">+TV(name: String, price: double, quantity: int, weight: double)</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="148" x="1408.5" y="1590.792">+getweight(): double</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="230" x="1408.5" y="1607.0889">+setweight(weight: double): void</text></g><!--MD5=[751423816e12fde81da70e0170aa2858]
+class Mobile--><g id="elem_Mobile"><rect codeLine="71" fill="#FFFFFF" height="92.8906" id="Mobile" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="466" x="1877" y="1521.5"/><ellipse cx="2083.75" cy="1535.5" fill="#FFFFFF" rx="9" ry="9" style="stroke:#000000;stroke-width:1.0;"/><path d="M2086.7188,1541.1406 Q2086.1406,1541.4375 2085.5,1541.5781 Q2084.8594,1541.7344 2084.1563,1541.7344 Q2081.6563,1541.7344 2080.3281,1540.0938 Q2079.0156,1538.4375 2079.0156,1535.3125 Q2079.0156,1532.1875 2080.3281,1530.5313 Q2081.6563,1528.875 2084.1563,1528.875 Q2084.8594,1528.875 2085.5,1529.0313 Q2086.1563,1529.1875 2086.7188,1529.4844 L2086.7188,1532.2031 Q2086.0938,1531.625 2085.5,1531.3594 Q2084.9063,1531.0781 2084.2813,1531.0781 Q2082.9375,1531.0781 2082.25,1532.1563 Q2081.5625,1533.2188 2081.5625,1535.3125 Q2081.5625,1537.4063 2082.25,1538.4844 Q2082.9375,1539.5469 2084.2813,1539.5469 Q2084.9063,1539.5469 2085.5,1539.2813 Q2086.0938,1539 2086.7188,1538.4219 L2086.7188,1541.1406 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="45" x="2101.25" y="1540.3467">Mobile</text><line style="stroke:#000000;stroke-width:1.0;" x1="1878" x2="2342" y1="1549.5" y2="1549.5"/><line style="stroke:#000000;stroke-width:1.0;" x1="1878" x2="2342" y1="1557.5" y2="1557.5"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="454" x="1883" y="1574.4951">+Mobile(name: String, price: double, quantity: int, weight: double)</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="148" x="1883" y="1590.792">+getweight(): double</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="230" x="1883" y="1607.0889">+setweight(weight: double): void</text></g><!--MD5=[6dc467986198aba31644c7a76ff1befd]
+class ScratchCard--><g id="elem_ScratchCard"><rect codeLine="77" fill="#FFFFFF" height="60.2969" id="ScratchCard" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="394" x="2655" y="1538"/><ellipse cx="2806.25" cy="1552" fill="#FFFFFF" rx="9" ry="9" style="stroke:#000000;stroke-width:1.0;"/><path d="M2809.2188,1557.6406 Q2808.6406,1557.9375 2808,1558.0781 Q2807.3594,1558.2344 2806.6563,1558.2344 Q2804.1563,1558.2344 2802.8281,1556.5938 Q2801.5156,1554.9375 2801.5156,1551.8125 Q2801.5156,1548.6875 2802.8281,1547.0313 Q2804.1563,1545.375 2806.6563,1545.375 Q2807.3594,1545.375 2808,1545.5313 Q2808.6563,1545.6875 2809.2188,1545.9844 L2809.2188,1548.7031 Q2808.5938,1548.125 2808,1547.8594 Q2807.4063,1547.5781 2806.7813,1547.5781 Q2805.4375,1547.5781 2804.75,1548.6563 Q2804.0625,1549.7188 2804.0625,1551.8125 Q2804.0625,1553.9063 2804.75,1554.9844 Q2805.4375,1556.0469 2806.7813,1556.0469 Q2807.4063,1556.0469 2808,1555.7813 Q2808.5938,1555.5 2809.2188,1554.9219 L2809.2188,1557.6406 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="84" x="2823.75" y="1556.8467">ScratchCard</text><line style="stroke:#000000;stroke-width:1.0;" x1="2656" x2="3048" y1="1566" y2="1566"/><line style="stroke:#000000;stroke-width:1.0;" x1="2656" x2="3048" y1="1574" y2="1574"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="382" x="2661" y="1590.9951">+ScratchCard(name: String, price: double, quantity: int)</text></g><!--MD5=[2ce0c9fb7f55b1e256ab28a8ea6b25ec]
+class Customer--><g id="elem_Customer"><rect codeLine="82" fill="#FFFFFF" height="190.6719" id="Customer" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="352" x="1377" y="415"/><ellipse cx="1515.25" cy="429" fill="#FFFFFF" rx="9" ry="9" style="stroke:#000000;stroke-width:1.0;"/><path d="M1518.2188,434.6406 Q1517.6406,434.9375 1517,435.0781 Q1516.3594,435.2344 1515.6563,435.2344 Q1513.1563,435.2344 1511.8281,433.5938 Q1510.5156,431.9375 1510.5156,428.8125 Q1510.5156,425.6875 1511.8281,424.0313 Q1513.1563,422.375 1515.6563,422.375 Q1516.3594,422.375 1517,422.5313 Q1517.6563,422.6875 1518.2188,422.9844 L1518.2188,425.7031 Q1517.5938,425.125 1517,424.8594 Q1516.4063,424.5781 1515.7813,424.5781 Q1514.4375,424.5781 1513.75,425.6563 Q1513.0625,426.7188 1513.0625,428.8125 Q1513.0625,430.9063 1513.75,431.9844 Q1514.4375,433.0469 1515.7813,433.0469 Q1516.4063,433.0469 1517,432.7813 Q1517.5938,432.5 1518.2188,431.9219 L1518.2188,434.6406 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="68" x="1532.75" y="433.8467">Customer</text><line style="stroke:#000000;stroke-width:1.0;" x1="1378" x2="1728" y1="443" y2="443"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="43" x="1383" y="459.9951">-id: int</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="93" x="1383" y="476.292">-name: String</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="116" x="1383" y="492.5889">-balance: double</text><line style="stroke:#000000;stroke-width:1.0;" x1="1378" x2="1728" y1="499.8906" y2="499.8906"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="297" x="1383" y="516.8857">+Customer(name: String, balance: double)</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="83" x="1383" y="533.1826">+getId(): int</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="134" x="1383" y="549.4795">+getName(): String</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="157" x="1383" y="565.7764">+getBalance(): double</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="218" x="1383" y="582.0732">+deduct(amount: double): void</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="340" x="1383" y="598.3701">+hasSufficientBalance(amount: double): boolean</text></g><!--MD5=[9bab5063b42bf90dcca070a1981b0c6a]
+class CartItem--><g id="elem_CartItem"><rect codeLine="96" fill="#FFFFFF" height="125.4844" id="CartItem" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="298" x="1985" y="868"/><ellipse cx="2101.25" cy="882" fill="#FFFFFF" rx="9" ry="9" style="stroke:#000000;stroke-width:1.0;"/><path d="M2104.2188,887.6406 Q2103.6406,887.9375 2103,888.0781 Q2102.3594,888.2344 2101.6563,888.2344 Q2099.1563,888.2344 2097.8281,886.5938 Q2096.5156,884.9375 2096.5156,881.8125 Q2096.5156,878.6875 2097.8281,877.0313 Q2099.1563,875.375 2101.6563,875.375 Q2102.3594,875.375 2103,875.5313 Q2103.6563,875.6875 2104.2188,875.9844 L2104.2188,878.7031 Q2103.5938,878.125 2103,877.8594 Q2102.4063,877.5781 2101.7813,877.5781 Q2100.4375,877.5781 2099.75,878.6563 Q2099.0625,879.7188 2099.0625,881.8125 Q2099.0625,883.9063 2099.75,884.9844 Q2100.4375,886.0469 2101.7813,886.0469 Q2102.4063,886.0469 2103,885.7813 Q2103.5938,885.5 2104.2188,884.9219 L2104.2188,887.6406 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="58" x="2118.75" y="886.8467">CartItem</text><line style="stroke:#000000;stroke-width:1.0;" x1="1986" x2="2282" y1="896" y2="896"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="122" x="1991" y="912.9951">-product: Product</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="86" x="1991" y="929.292">-quantity: int</text><line style="stroke:#000000;stroke-width:1.0;" x1="1986" x2="2282" y1="936.5938" y2="936.5938"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="286" x="1991" y="953.5889">+CartItem(product: Product, quantity: int)</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="162" x="1991" y="969.8857">+getProduct(): Product</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="128" x="1991" y="986.1826">+getQuantity(): int</text></g><!--MD5=[a608780e30028417ceff2d6f0d878efa]
+class Cart--><g id="elem_Cart"><rect codeLine="105" fill="#FFFFFF" height="141.7813" id="Cart" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="357" x="1569.5" y="666"/><ellipse cx="1730.25" cy="680" fill="#FFFFFF" rx="9" ry="9" style="stroke:#000000;stroke-width:1.0;"/><path d="M1733.2188,685.6406 Q1732.6406,685.9375 1732,686.0781 Q1731.3594,686.2344 1730.6563,686.2344 Q1728.1563,686.2344 1726.8281,684.5938 Q1725.5156,682.9375 1725.5156,679.8125 Q1725.5156,676.6875 1726.8281,675.0313 Q1728.1563,673.375 1730.6563,673.375 Q1731.3594,673.375 1732,673.5313 Q1732.6563,673.6875 1733.2188,673.9844 L1733.2188,676.7031 Q1732.5938,676.125 1732,675.8594 Q1731.4063,675.5781 1730.7813,675.5781 Q1729.4375,675.5781 1728.75,676.6563 Q1728.0625,677.7188 1728.0625,679.8125 Q1728.0625,681.9063 1728.75,682.9844 Q1729.4375,684.0469 1730.7813,684.0469 Q1731.4063,684.0469 1732,683.7813 Q1732.5938,683.5 1733.2188,682.9219 L1733.2188,685.6406 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="28" x="1747.75" y="684.8467">Cart</text><line style="stroke:#000000;stroke-width:1.0;" x1="1570.5" x2="1925.5" y1="694" y2="694"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="157" x="1575.5" y="710.9951">-items: List&lt;CartItem&gt;</text><line style="stroke:#000000;stroke-width:1.0;" x1="1570.5" x2="1925.5" y1="718.2969" y2="718.2969"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="50" x="1575.5" y="735.292">+Cart()</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="345" x="1575.5" y="751.5889">+addProduct(product: Product, quantity: int): void</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="197" x="1575.5" y="767.8857">+getItems(): List&lt;CartItem&gt;</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="141" x="1575.5" y="784.1826">+isEmpty(): boolean</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="92" x="1575.5" y="800.4795">+clear(): void</text></g><!--MD5=[7755cdbe580d9f9d37dd5c46014c45b9]
+class ShippingService--><g id="elem_ShippingService"><rect codeLine="116" fill="#FFFFFF" height="158.0781" id="ShippingService" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="398" x="2115" y="197"/><ellipse cx="2255.25" cy="211" fill="#FFFFFF" rx="9" ry="9" style="stroke:#000000;stroke-width:1.0;"/><path d="M2258.2188,216.6406 Q2257.6406,216.9375 2257,217.0781 Q2256.3594,217.2344 2255.6563,217.2344 Q2253.1563,217.2344 2251.8281,215.5938 Q2250.5156,213.9375 2250.5156,210.8125 Q2250.5156,207.6875 2251.8281,206.0313 Q2253.1563,204.375 2255.6563,204.375 Q2256.3594,204.375 2257,204.5313 Q2257.6563,204.6875 2258.2188,204.9844 L2258.2188,207.7031 Q2257.5938,207.125 2257,206.8594 Q2256.4063,206.5781 2255.7813,206.5781 Q2254.4375,206.5781 2253.75,207.6563 Q2253.0625,208.7188 2253.0625,210.8125 Q2253.0625,212.9063 2253.75,213.9844 Q2254.4375,215.0469 2255.7813,215.0469 Q2256.4063,215.0469 2257,214.7813 Q2257.5938,214.5 2258.2188,213.9219 L2258.2188,216.6406 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="110" x="2272.75" y="215.8467">ShippingService</text><line style="stroke:#000000;stroke-width:1.0;" x1="2116" x2="2512" y1="225" y2="225"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="258" x="2121" y="241.9951">-feeCalculator: ShippingFeeCalculator</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="362" x="2121" y="258.292">-processShipmentPrinting: ProcessShipmentPrinting</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="320" x="2121" y="274.5889">-extractShippableItems: ExtractShippableItems</text><line style="stroke:#000000;stroke-width:1.0;" x1="2116" x2="2512" y1="281.8906" y2="281.8906"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="132" x="2121" y="298.8857">+ShippingService()</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="352" x="2121" y="315.1826">+extractShippableItems(cart: Cart): List&lt;CartItem&gt;</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="386" x="2121" y="331.4795">+calculateShippingFees(items: List&lt;CartItem&gt;): double</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="333" x="2121" y="347.7764">+processShipment(items: List&lt;CartItem&gt;): void</text></g><!--MD5=[db683ec594abbe3028cdc16e28064447]
+class ShippingFeeCalculator--><g id="elem_ShippingFeeCalculator"><rect codeLine="127" fill="#FFFFFF" height="92.8906" id="ShippingFeeCalculator" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="305" x="2341.5" y="690.5"/><ellipse cx="2413.25" cy="704.5" fill="#FFFFFF" rx="9" ry="9" style="stroke:#000000;stroke-width:1.0;"/><path d="M2416.2188,710.1406 Q2415.6406,710.4375 2415,710.5781 Q2414.3594,710.7344 2413.6563,710.7344 Q2411.1563,710.7344 2409.8281,709.0938 Q2408.5156,707.4375 2408.5156,704.3125 Q2408.5156,701.1875 2409.8281,699.5313 Q2411.1563,697.875 2413.6563,697.875 Q2414.3594,697.875 2415,698.0313 Q2415.6563,698.1875 2416.2188,698.4844 L2416.2188,701.2031 Q2415.5938,700.625 2415,700.3594 Q2414.4063,700.0781 2413.7813,700.0781 Q2412.4375,700.0781 2411.75,701.1563 Q2411.0625,702.2188 2411.0625,704.3125 Q2411.0625,706.4063 2411.75,707.4844 Q2412.4375,708.5469 2413.7813,708.5469 Q2414.4063,708.5469 2415,708.2813 Q2415.5938,708 2416.2188,707.4219 L2416.2188,710.1406 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="154" x="2430.75" y="709.3467">ShippingFeeCalculator</text><line style="stroke:#000000;stroke-width:1.0;" x1="2342.5" x2="2645.5" y1="718.5" y2="718.5"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="122" x="2347.5" y="735.4951">-baseFee: double</text><line style="stroke:#000000;stroke-width:1.0;" x1="2342.5" x2="2645.5" y1="742.7969" y2="742.7969"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="293" x="2347.5" y="759.792">+ShippingFeeCalculator(baseFee: double)</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="292" x="2347.5" y="776.0889">+calculate(items: List&lt;CartItem&gt;): double</text></g><!--MD5=[4c86c4ec66513643ce75da797240b711]
+class ProcessShipmentPrinting--><g id="elem_ProcessShipmentPrinting"><rect codeLine="133" fill="#FFFFFF" height="60.2969" id="ProcessShipmentPrinting" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="345" x="1961.5" y="707"/><ellipse cx="2043.25" cy="721" fill="#FFFFFF" rx="9" ry="9" style="stroke:#000000;stroke-width:1.0;"/><path d="M2046.2188,726.6406 Q2045.6406,726.9375 2045,727.0781 Q2044.3594,727.2344 2043.6563,727.2344 Q2041.1563,727.2344 2039.8281,725.5938 Q2038.5156,723.9375 2038.5156,720.8125 Q2038.5156,717.6875 2039.8281,716.0313 Q2041.1563,714.375 2043.6563,714.375 Q2044.3594,714.375 2045,714.5313 Q2045.6563,714.6875 2046.2188,714.9844 L2046.2188,717.7031 Q2045.5938,717.125 2045,716.8594 Q2044.4063,716.5781 2043.7813,716.5781 Q2042.4375,716.5781 2041.75,717.6563 Q2041.0625,718.7188 2041.0625,720.8125 Q2041.0625,722.9063 2041.75,723.9844 Q2042.4375,725.0469 2043.7813,725.0469 Q2044.4063,725.0469 2045,724.7813 Q2045.5938,724.5 2046.2188,723.9219 L2046.2188,726.6406 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="174" x="2060.75" y="725.8467">ProcessShipmentPrinting</text><line style="stroke:#000000;stroke-width:1.0;" x1="1962.5" x2="2305.5" y1="735" y2="735"/><line style="stroke:#000000;stroke-width:1.0;" x1="1962.5" x2="2305.5" y1="743" y2="743"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="333" x="1967.5" y="759.9951">+processShipment(items: List&lt;CartItem&gt;): void</text></g><!--MD5=[05492c578de0ce6a650e698aaab3234d]
+class ExtractShippableItems--><g id="elem_ExtractShippableItems"><rect codeLine="137" fill="#FFFFFF" height="60.2969" id="ExtractShippableItems" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="364" x="1906" y="480.5"/><ellipse cx="2007.75" cy="494.5" fill="#FFFFFF" rx="9" ry="9" style="stroke:#000000;stroke-width:1.0;"/><path d="M2010.7188,500.1406 Q2010.1406,500.4375 2009.5,500.5781 Q2008.8594,500.7344 2008.1563,500.7344 Q2005.6563,500.7344 2004.3281,499.0938 Q2003.0156,497.4375 2003.0156,494.3125 Q2003.0156,491.1875 2004.3281,489.5313 Q2005.6563,487.875 2008.1563,487.875 Q2008.8594,487.875 2009.5,488.0313 Q2010.1563,488.1875 2010.7188,488.4844 L2010.7188,491.2031 Q2010.0938,490.625 2009.5,490.3594 Q2008.9063,490.0781 2008.2813,490.0781 Q2006.9375,490.0781 2006.25,491.1563 Q2005.5625,492.2188 2005.5625,494.3125 Q2005.5625,496.4063 2006.25,497.4844 Q2006.9375,498.5469 2008.2813,498.5469 Q2008.9063,498.5469 2009.5,498.2813 Q2010.0938,498 2010.7188,497.4219 L2010.7188,500.1406 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="153" x="2025.25" y="499.3467">ExtractShippableItems</text><line style="stroke:#000000;stroke-width:1.0;" x1="1907" x2="2269" y1="508.5" y2="508.5"/><line style="stroke:#000000;stroke-width:1.0;" x1="1907" x2="2269" y1="516.5" y2="516.5"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="352" x="1912" y="533.4951">+extractShippableItems(cart: Cart): List&lt;CartItem&gt;</text></g><!--MD5=[4a6db78ad09ca920c56f25f7a41043c7]
+class CheckoutService--><g id="elem_CheckoutService"><rect codeLine="142" fill="#FFFFFF" height="125.4844" id="CheckoutService" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="408" x="1238" y="12"/><ellipse cx="1379.75" cy="26" fill="#FFFFFF" rx="9" ry="9" style="stroke:#000000;stroke-width:1.0;"/><path d="M1382.7188,31.6406 Q1382.1406,31.9375 1381.5,32.0781 Q1380.8594,32.2344 1380.1563,32.2344 Q1377.6563,32.2344 1376.3281,30.5938 Q1375.0156,28.9375 1375.0156,25.8125 Q1375.0156,22.6875 1376.3281,21.0313 Q1377.6563,19.375 1380.1563,19.375 Q1380.8594,19.375 1381.5,19.5313 Q1382.1563,19.6875 1382.7188,19.9844 L1382.7188,22.7031 Q1382.0938,22.125 1381.5,21.8594 Q1380.9063,21.5781 1380.2813,21.5781 Q1378.9375,21.5781 1378.25,22.6563 Q1377.5625,23.7188 1377.5625,25.8125 Q1377.5625,27.9063 1378.25,28.9844 Q1378.9375,30.0469 1380.2813,30.0469 Q1380.9063,30.0469 1381.5,29.7813 Q1382.0938,29.5 1382.7188,28.9219 L1382.7188,31.6406 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="117" x="1397.25" y="30.8467">CheckoutService</text><line style="stroke:#000000;stroke-width:1.0;" x1="1239" x2="1645" y1="40" y2="40"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="197" x="1244" y="56.9951">-validator: CheckoutValidator</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="157" x="1244" y="73.292">-printer: ReceiptPrinter</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="233" x="1244" y="89.5889">-shippingService: ShippingService</text><line style="stroke:#000000;stroke-width:1.0;" x1="1239" x2="1645" y1="96.8906" y2="96.8906"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="367" x="1244" y="113.8857">+CheckoutService(shippingService: ShippingService)</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="396" x="1244" y="130.1826">+processCheckout(customer: Customer, cart: Cart): void</text></g><!--MD5=[d7911e186dfb4dcb5a5cc7f9a98616fc]
+class CheckoutValidator--><g id="elem_CheckoutValidator"><rect codeLine="151" fill="#FFFFFF" height="60.2969" id="CheckoutValidator" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="337" x="1162.5" y="246"/><ellipse cx="1264.25" cy="260" fill="#FFFFFF" rx="9" ry="9" style="stroke:#000000;stroke-width:1.0;"/><path d="M1267.2188,265.6406 Q1266.6406,265.9375 1266,266.0781 Q1265.3594,266.2344 1264.6563,266.2344 Q1262.1563,266.2344 1260.8281,264.5938 Q1259.5156,262.9375 1259.5156,259.8125 Q1259.5156,256.6875 1260.8281,255.0313 Q1262.1563,253.375 1264.6563,253.375 Q1265.3594,253.375 1266,253.5313 Q1266.6563,253.6875 1267.2188,253.9844 L1267.2188,256.7031 Q1266.5938,256.125 1266,255.8594 Q1265.4063,255.5781 1264.7813,255.5781 Q1263.4375,255.5781 1262.75,256.6563 Q1262.0625,257.7188 1262.0625,259.8125 Q1262.0625,261.9063 1262.75,262.9844 Q1263.4375,264.0469 1264.7813,264.0469 Q1265.4063,264.0469 1266,263.7813 Q1266.5938,263.5 1267.2188,262.9219 L1267.2188,265.6406 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="126" x="1281.75" y="264.8467">CheckoutValidator</text><line style="stroke:#000000;stroke-width:1.0;" x1="1163.5" x2="1498.5" y1="274" y2="274"/><line style="stroke:#000000;stroke-width:1.0;" x1="1163.5" x2="1498.5" y1="282" y2="282"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="325" x="1168.5" y="298.9951">+validate(customer: Customer, cart: Cart): void</text></g><!--MD5=[2e8237c423197d257aa9333e80eda67d]
+class ReceiptPrinter--><g id="elem_ReceiptPrinter"><rect codeLine="155" fill="#FFFFFF" height="60.2969" id="ReceiptPrinter" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="474" x="1606" y="246"/><ellipse cx="1790.25" cy="260" fill="#FFFFFF" rx="9" ry="9" style="stroke:#000000;stroke-width:1.0;"/><path d="M1793.2188,265.6406 Q1792.6406,265.9375 1792,266.0781 Q1791.3594,266.2344 1790.6563,266.2344 Q1788.1563,266.2344 1786.8281,264.5938 Q1785.5156,262.9375 1785.5156,259.8125 Q1785.5156,256.6875 1786.8281,255.0313 Q1788.1563,253.375 1790.6563,253.375 Q1791.3594,253.375 1792,253.5313 Q1792.6563,253.6875 1793.2188,253.9844 L1793.2188,256.7031 Q1792.5938,256.125 1792,255.8594 Q1791.4063,255.5781 1790.7813,255.5781 Q1789.4375,255.5781 1788.75,256.6563 Q1788.0625,257.7188 1788.0625,259.8125 Q1788.0625,261.9063 1788.75,262.9844 Q1789.4375,264.0469 1790.7813,264.0469 Q1791.4063,264.0469 1792,263.7813 Q1792.5938,263.5 1793.2188,262.9219 L1793.2188,265.6406 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="98" x="1807.75" y="264.8467">ReceiptPrinter</text><line style="stroke:#000000;stroke-width:1.0;" x1="1607" x2="2079" y1="274" y2="274"/><line style="stroke:#000000;stroke-width:1.0;" x1="1607" x2="2079" y1="282" y2="282"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="462" x="1612" y="298.9951">+print(customer: Customer, cart: Cart, shippingFees: double): void</text></g><!--MD5=[411d4463a1fa2dcd1ca0d064f9db0deb]
+class CartCalculator--><g id="elem_CartCalculator"><rect codeLine="159" fill="#FFFFFF" height="60.2969" id="CartCalculator" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="272" x="855" y="246"/><ellipse cx="939.25" cy="260" fill="#FFFFFF" rx="9" ry="9" style="stroke:#000000;stroke-width:1.0;"/><path d="M942.2188,265.6406 Q941.6406,265.9375 941,266.0781 Q940.3594,266.2344 939.6563,266.2344 Q937.1563,266.2344 935.8281,264.5938 Q934.5156,262.9375 934.5156,259.8125 Q934.5156,256.6875 935.8281,255.0313 Q937.1563,253.375 939.6563,253.375 Q940.3594,253.375 941,253.5313 Q941.6563,253.6875 942.2188,253.9844 L942.2188,256.7031 Q941.5938,256.125 941,255.8594 Q940.4063,255.5781 939.7813,255.5781 Q938.4375,255.5781 937.75,256.6563 Q937.0625,257.7188 937.0625,259.8125 Q937.0625,261.9063 937.75,262.9844 Q938.4375,264.0469 939.7813,264.0469 Q940.4063,264.0469 941,263.7813 Q941.5938,263.5 942.2188,262.9219 L942.2188,265.6406 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="96" x="956.75" y="264.8467">CartCalculator</text><line style="stroke:#000000;stroke-width:1.0;" x1="856" x2="1126" y1="274" y2="274"/><line style="stroke:#000000;stroke-width:1.0;" x1="856" x2="1126" y1="282" y2="282"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" text-decoration="underline" textLength="260" x="861" y="298.9951">+calculateSubtotal(cart: Cart): double</text></g><!--MD5=[76cfe259b30a0a0424c013374326687d]
+link CheckoutService to CheckoutValidator--><g id="link_CheckoutService_CheckoutValidator"><path codeLine="164" d="M1368.75,137.15 C1368.75,137.15 1368.75,240.77 1368.75,240.77 " fill="none" id="CheckoutService-to-CheckoutValidator" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="1368.75,245.77,1372.75,236.77,1368.75,240.77,1364.75,236.77,1368.75,245.77" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="30" x="1337.75" y="185.0269">uses</text></g><!--MD5=[8641b9913e4a9cd380d4fcf5b23788a1]
+link CheckoutService to ReceiptPrinter--><g id="link_CheckoutService_ReceiptPrinter"><path codeLine="165" d="M1619.33,137.15 C1619.33,137.15 1619.33,240.77 1619.33,240.77 " fill="none" id="CheckoutService-to-ReceiptPrinter" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="1619.33,245.77,1623.33,236.77,1619.33,240.77,1615.33,236.77,1619.33,245.77" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="30" x="1588.33" y="185.0269">uses</text></g><!--MD5=[98333bc40a6b7b52bbfdec53bcdb4988]
+link CheckoutService to ShippingService--><g id="link_CheckoutService_ShippingService"><path codeLine="166" d="M1632.67,137.05 C1632.67,177.25 1632.67,222 1632.67,222 C1632.67,222 2109.64,222 2109.64,222 " fill="none" id="CheckoutService-to-ShippingService" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="2114.64,222,2105.64,218,2109.64,222,2105.64,226,2114.64,222" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="30" x="1797.68" y="218.0669">uses</text></g><!--MD5=[17ae2f8ada5391384d5584aa07671bc2]
+link ShippingService to ShippingFeeCalculator--><g id="link_ShippingService_ShippingFeeCalculator"><path codeLine="169" d="M2427.25,355.25 C2427.25,355.25 2427.25,685.37 2427.25,685.37 " fill="none" id="ShippingService-to-ShippingFeeCalculator" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="2427.25,690.37,2431.25,681.37,2427.25,685.37,2423.25,681.37,2427.25,690.37" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="30" x="2396.25" y="516.3769">uses</text></g><!--MD5=[aa6d90215567e97187dcc59a3123a7be]
+link ShippingService to ProcessShipmentPrinting--><g id="link_ShippingService_ProcessShipmentPrinting"><path codeLine="170" d="M2288.25,355.25 C2288.25,355.25 2288.25,701.83 2288.25,701.83 " fill="none" id="ShippingService-to-ProcessShipmentPrinting" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="2288.25,706.83,2292.25,697.83,2288.25,701.83,2284.25,697.83,2288.25,706.83" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="30" x="2289.25" y="524.6069">uses</text></g><!--MD5=[50116b49bd12dd91ead5823648ace933]
+link ShippingService to ExtractShippableItems--><g id="link_ShippingService_ExtractShippableItems"><path codeLine="171" d="M2192.5,355.06 C2192.5,355.06 2192.5,475.44 2192.5,475.44 " fill="none" id="ShippingService-to-ExtractShippableItems" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="2192.5,480.44,2196.5,471.44,2192.5,475.44,2188.5,471.44,2192.5,480.44" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="30" x="2161.5" y="411.3169">uses</text></g><!--MD5=[a00df1b143562a22782bc0e27dcd57a0]
+reverse link Product to ShippableProduct--><g id="link_Product_ShippableProduct"><path codeLine="176" d="M2044.75,1296.05 C2044.75,1296.05 2044.75,1335.96 2044.75,1335.96 " fill="none" id="Product-backto-ShippableProduct" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="none" points="2037.75,1296.05,2044.75,1276.05,2051.75,1296.05,2037.75,1296.05" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[1a41a35c63cf381d1efe71246c62a09c]
+reverse link Product to NonShippableProduct--><g id="link_Product_NonShippableProduct"><path codeLine="177" d="M2226.75,1296.31 C2226.75,1296.31 2226.75,1383 2226.75,1383 C2226.75,1383 2307.7,1383 2396.78,1383 " fill="none" id="Product-backto-NonShippableProduct" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="none" points="2219.75,1296.31,2226.75,1276.31,2233.75,1296.31,2219.75,1296.31" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[76b4fa26024d39050f0a5fa9e276117e]
+reverse link ShippableProduct to Cheese--><g id="link_ShippableProduct_Cheese"><path codeLine="179" d="M1574.42,1383 C1574.42,1383 342,1383 342,1383 C342,1383 342,1438.53 342,1488.74 " fill="none" id="ShippableProduct-backto-Cheese" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="none" points="1574.42,1376,1594.42,1383,1574.42,1390,1574.42,1376" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[2936a29357af2fa1467c5624d761bdcd]
+reverse link ShippableProduct to Biscuits--><g id="link_ShippableProduct_Biscuits"><path codeLine="180" d="M1676.83,1449.19 C1676.83,1449.19 1676.83,1506 1676.83,1506 C1676.83,1506 1523.67,1506 1367.22,1506 " fill="none" id="ShippableProduct-backto-Biscuits" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="none" points="1669.83,1449.19,1676.83,1429.19,1683.83,1449.19,1669.83,1449.19" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[2d22d763817c607edda84146fb0935e0]
+reverse link ShippableProduct to TV--><g id="link_ShippableProduct_TV"><path codeLine="181" d="M1759.17,1449.31 C1759.17,1449.31 1759.17,1521.21 1759.17,1521.21 " fill="none" id="ShippableProduct-backto-TV" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="none" points="1752.17,1449.31,1759.17,1429.31,1766.17,1449.31,1752.17,1449.31" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[f37b30fb6aefb7f984b134b78d3286c7]
+reverse link ShippableProduct to Mobile--><g id="link_ShippableProduct_Mobile"><path codeLine="182" d="M2007.25,1449.31 C2007.25,1449.31 2007.25,1521.21 2007.25,1521.21 " fill="none" id="ShippableProduct-backto-Mobile" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="none" points="2000.25,1449.31,2007.25,1429.31,2014.25,1449.31,2000.25,1449.31" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[6e3227ce0a5fb00753bf965ccfc2e195]
+reverse link NonShippableProduct to ScratchCard--><g id="link_NonShippableProduct_ScratchCard"><path codeLine="183" d="M2756,1432.72 C2756,1432.72 2756,1537.8 2756,1537.8 " fill="none" id="NonShippableProduct-backto-ScratchCard" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="none" points="2749,1432.72,2756,1412.72,2763,1432.72,2749,1432.72" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[016c9daa5786faba5f36eb2232fd17e9]
+link ShippableProduct to Shippable--><g id="link_ShippableProduct_Shippable"><path codeLine="186" d="M2137.82,1421 C2264.4,1421 2387.5,1421 2387.5,1421 C2387.5,1421 2387.5,1509.38 2387.5,1509.38 " fill="none" id="ShippableProduct-to-Shippable" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="2394.5,1509.38,2387.5,1529.38,2380.5,1509.38,2394.5,1509.38" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[d4dd3a139230bd881708c035cb86e9d5]
+link Cheese to Expirable--><g id="link_Cheese_Expirable"><path codeLine="187" d="M605.25,1647.21 C605.25,1647.21 605.25,1686.98 605.25,1686.98 " fill="none" id="Cheese-to-Expirable" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="612.25,1686.98,605.25,1706.98,598.25,1686.98,612.25,1686.98" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[01bf490485130b8394b23648c83d8716]
+link Biscuits to Expirable--><g id="link_Biscuits_Expirable"><path codeLine="188" d="M773.25,1647.21 C773.25,1647.21 773.25,1686.98 773.25,1686.98 " fill="none" id="Biscuits-to-Expirable" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="780.25,1686.98,773.25,1706.98,766.25,1686.98,780.25,1686.98" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[00116170f314697b1299e0aa130488a3]
+reverse link Cart to CartItem--><g id="link_Cart_CartItem"><path codeLine="191" d="M1939.51,796 C1939.51,796 2084.33,796 2084.33,796 C2084.33,796 2084.33,832.85 2084.33,867.98 " fill="none" id="Cart-backto-CartItem" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="1926.51,796,1932.51,800,1938.51,796,1932.51,792,1926.51,796" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="32" x="2014.91" y="792.0669">owns</text><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="1934.78" y="795.4085">1</text><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="23" x="2054.2572" y="856.9305">0..*</text></g><!--MD5=[b05a6c0e609b4fce27e5fb84e8f8e115]
+link CartItem to Product--><g id="link_CartItem_Product"><path codeLine="194" d="M2134,993.21 C2134,993.21 2134,1047.83 2134,1047.83 " fill="none" id="CartItem-to-Product" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="2134,1052.83,2138,1043.83,2134,1047.83,2130,1043.83,2134,1052.83" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="30" x="2103" y="1033.5869">uses</text><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="2125.5375" y="1013.3746">1</text><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="2125.7313" y="1041.8857">1</text></g><!--MD5=[67be14f9489b543ea313672a76b6a8d8]
+link CheckoutService to Cart--><g id="link_CheckoutService_Cart"><path codeLine="197" d="M1570.5,137.18 C1570.5,215.4 1570.5,339 1570.5,339 C1570.5,339 1773.25,339 1773.25,339 C1773.25,339 1773.25,660.85 1773.25,660.85 " fill="none" id="CheckoutService-to-Cart" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="1773.25,665.85,1777.25,656.85,1773.25,660.85,1769.25,656.85,1773.25,665.85" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="30" x="1700.89" y="335.0669">uses</text><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="1576.8953" y="157.3411">1</text><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="1767.4414" y="654.8242">1</text></g><!--MD5=[3a48fc5968cd556f5cd06493563c2b05]
+link CheckoutService to Customer--><g id="link_CheckoutService_Customer"><path codeLine="198" d="M1535,137.43 C1535,137.43 1535,409.61 1535,409.61 " fill="none" id="CheckoutService-to-Customer" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="1535,414.61,1539,405.61,1535,409.61,1531,405.61,1535,414.61" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="30" x="1504" y="269.5869">uses</text><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="1537.2906" y="157.62">1</text><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="1525.3156" y="403.7787">1</text></g><!--MD5=[917af74fee1495857ab367488d6d95fc]
+link CheckoutService to CartCalculator--><g id="link_CheckoutService_CartCalculator"><path codeLine="201" d="M1237.94,75 C1118.52,75 991,75 991,75 C991,75 991,240.91 991,240.91 " fill="none" id="CheckoutService-to-CartCalculator" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="991,245.91,995,236.91,991,240.91,987,236.91,991,245.91" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="28" x="1002.52" y="71.0669">calls</text></g><!--MD5=[5f2d572ca2374744b64afe031492929f]
+link CheckoutValidator to Customer--><g id="link_CheckoutValidator_Customer"><path codeLine="204" d="M1438.25,306.18 C1438.25,306.18 1438.25,409.8 1438.25,409.8 " fill="none" id="CheckoutValidator-to-Customer" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="1438.25,414.8,1442.25,405.8,1438.25,409.8,1434.25,405.8,1438.25,414.8" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="57" x="1380.25" y="354.0569">validates</text></g><!--MD5=[42b8196b472737e7e18a8f403b51a67f]
+link CheckoutValidator to Cart--><g id="link_CheckoutValidator_Cart"><path codeLine="205" d="M1372,306.11 C1372,405.06 1372,714 1372,714 C1372,714 1564.36,714 1564.36,714 " fill="none" id="CheckoutValidator-to-Cart" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="1569.36,714,1560.36,710,1564.36,714,1560.36,718,1569.36,714" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="57" x="1314" y="602.2969">validates</text></g><!--MD5=[c6fb02f5a2e97c0b04069386a6b83fc6]
+link ReceiptPrinter to Customer--><g id="link_ReceiptPrinter_Customer"><path codeLine="206" d="M1667.5,306.18 C1667.5,306.18 1667.5,409.8 1667.5,409.8 " fill="none" id="ReceiptPrinter-to-Customer" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="1667.5,414.8,1671.5,405.8,1667.5,409.8,1663.5,405.8,1667.5,414.8" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="36" x="1630.5" y="354.0569">prints</text></g><!--MD5=[ce49197aa4f7e91f6de0e0fcb791c053]
+link ReceiptPrinter to Cart--><g id="link_ReceiptPrinter_Cart"><path codeLine="207" d="M1817.5,306.25 C1817.5,306.25 1817.5,660.99 1817.5,660.99 " fill="none" id="ReceiptPrinter-to-Cart" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="1817.5,665.99,1821.5,656.99,1817.5,660.99,1813.5,656.99,1817.5,665.99" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="36" x="1780.5" y="479.6869">prints</text></g><!--MD5=[b4b5ab8dde5fbadb7cde472576b4acc0]
+link CartCalculator to Cart--><g id="link_CartCalculator_Cart"><path codeLine="208" d="M991,306.34 C991,412.52 991,761 991,761 C991,761 1564.08,761 1564.08,761 " fill="none" id="CartCalculator-to-Cart" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="1569.08,761,1560.08,757,1564.08,761,1560.08,765,1569.08,761" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="64" x="985.21" y="757.0669">calculates</text></g><!--MD5=[0beb1c12471b06b959cfb49dc8b32755]
+link ShippingService to Cart--><g id="link_ShippingService_Cart"><path codeLine="209" d="M2114.98,323 C1993.65,323 1861.75,323 1861.75,323 C1861.75,323 1861.75,660.83 1861.75,660.83 " fill="none" id="ShippingService-to-Cart" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="1861.75,665.83,1865.75,656.83,1861.75,660.83,1857.75,656.83,1861.75,665.83" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="65" x="1795.75" y="361.3669">processes</text></g><!--MD5=[05999ddd1b46a79514233089bf8b8865]
+link ShippingFeeCalculator to CartItem--><g id="link_ShippingFeeCalculator_CartItem"><path codeLine="210" d="M2360.5,783.96 C2360.5,841.38 2360.5,931 2360.5,931 C2360.5,931 2288.19,931 2288.19,931 " fill="none" id="ShippingFeeCalculator-to-CartItem" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="2283.19,931,2292.19,935,2288.19,931,2292.19,927,2283.19,931" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="64" x="2295.5" y="889.7069">calculates</text></g><!--MD5=[54d1313b21ff9e462a81b0c4c0380786]
+link ProcessShipmentPrinting to CartItem--><g id="link_ProcessShipmentPrinting_CartItem"><path codeLine="211" d="M2183.67,767.23 C2183.67,767.23 2183.67,862.68 2183.67,862.68 " fill="none" id="ProcessShipmentPrinting-to-CartItem" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="2183.67,867.68,2187.67,858.68,2183.67,862.68,2179.67,858.68,2183.67,867.68" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="36" x="2146.67" y="811.0269">prints</text></g><!--MD5=[def099e8ae0d1e224ce5ec8188a59715]
+link ExtractShippableItems to Cart--><g id="link_ExtractShippableItems_Cart"><path codeLine="212" d="M1916.25,540.58 C1916.25,540.58 1916.25,660.75 1916.25,660.75 " fill="none" id="ExtractShippableItems-to-Cart" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="1916.25,665.75,1920.25,656.75,1916.25,660.75,1912.25,656.75,1916.25,665.75" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="52" x="1863.25" y="596.7269">extracts</text></g><!--MD5=[e3523722b92f5bfd1e34a15509721f0e]
+@startuml
+!theme plain
+skinparam classAttributeIconSize 0
+skinparam linetype ortho
+
+' ======= INTERFACES =======
+interface Shippable {
+    +getweight(): double
+    +setweight(weight: double): void
+}
+
+interface Expirable {
+    +isExpired(): boolean
+    +setExpirationDate(date: LocalDate): void
+    +getExpirationDate(): LocalDate
+}
+
+' ======= ABSTRACT CLASS =======
+abstract class Product {
+    #name: String
+    #price: double
+    #quantity: int
+
+    +Product(name: String, price: double, quantity: int)
+    +getName(): String
+    +setName(name: String): void
+    +getPrice(): double
+    +setPrice(price: double): void
+    +getQuantity(): int
+    +setQuantity(quantity: int): void
+    +reduceQuantity(quantity: int): void
+}
+
+' ======= PRODUCT TYPES =======
+abstract class ShippableProduct {
+    #weight: double
+    +ShippableProduct(name: String, price: double, quantity: int, weight: double)
+    +getWeight(): double
+}
+
+abstract class NonShippableProduct {
+    +NonShippableProduct(name: String, price: double, quantity: int)
+}
+
+' ======= CONCRETE PRODUCTS =======
+class Cheese {
+    -expirationDate: LocalDate
+    +Cheese(name: String, price: double, quantity: int, weight: double, expirationDate: LocalDate)
+    +getweight(): double
+    +setweight(weight: double): void
+    +getExpirationDate(): LocalDate
+    +setExpirationDate(expirationDate: LocalDate): void
+    +isExpired(): boolean
+}
+
+class Biscuits {
+    -expirationDate: LocalDate
+    +Biscuits(name: String, price: double, quantity: int, weight: double, expirationDate: LocalDate)
+    +getweight(): double
+    +setweight(weight: double): void
+    +getExpirationDate(): LocalDate
+    +setExpirationDate(expirationDate: LocalDate): void
+    +isExpired(): boolean
+}
+
+class TV {
+    +TV(name: String, price: double, quantity: int, weight: double)
+    +getweight(): double
+    +setweight(weight: double): void
+}
+
+class Mobile {
+    +Mobile(name: String, price: double, quantity: int, weight: double)
+    +getweight(): double
+    +setweight(weight: double): void
+}
+
+class ScratchCard {
+    +ScratchCard(name: String, price: double, quantity: int)
+}
+
+' ======= CUSTOMER =======
+class Customer {
+    -id: int
+    -name: String
+    -balance: double
+
+    +Customer(name: String, balance: double)
+    +getId(): int
+    +getName(): String
+    +getBalance(): double
+    +deduct(amount: double): void
+    +hasSufficientBalance(amount: double): boolean
+}
+
+' ======= CART SYSTEM =======
+class CartItem {
+    -product: Product
+    -quantity: int
+
+    +CartItem(product: Product, quantity: int)
+    +getProduct(): Product
+    +getQuantity(): int
+}
+
+class Cart {
+    -items: List<CartItem>
+
+    +Cart()
+    +addProduct(product: Product, quantity: int): void
+    +getItems(): List<CartItem>
+    +isEmpty(): boolean
+    +clear(): void
+}
+
+' ======= SERVICES =======
+class ShippingService {
+    -feeCalculator: ShippingFeeCalculator
+    -processShipmentPrinting: ProcessShipmentPrinting
+    -extractShippableItems: ExtractShippableItems
+
+    +ShippingService()
+    +extractShippableItems(cart: Cart): List<CartItem>
+    +calculateShippingFees(items: List<CartItem>): double
+    +processShipment(items: List<CartItem>): void
+}
+
+class ShippingFeeCalculator {
+    -baseFee: double
+    +ShippingFeeCalculator(baseFee: double)
+    +calculate(items: List<CartItem>): double
+}
+
+class ProcessShipmentPrinting {
+    +processShipment(items: List<CartItem>): void
+}
+
+class ExtractShippableItems {
+    +extractShippableItems(cart: Cart): List<CartItem>
+}
+
+' ======= SERVICES - CHECKOUT =======
+class CheckoutService {
+    -validator: CheckoutValidator
+    -printer: ReceiptPrinter
+    -shippingService: ShippingService
+
+    +CheckoutService(shippingService: ShippingService)
+    +processCheckout(customer: Customer, cart: Cart): void
+}
+
+class CheckoutValidator {
+    +validate(customer: Customer, cart: Cart): void
+}
+
+class ReceiptPrinter {
+    +print(customer: Customer, cart: Cart, shippingFees: double): void
+}
+
+class CartCalculator {
+    +{static} calculateSubtotal(cart: Cart): double
+}
+
+' ======= DEPENDENCIES BETWEEN CHECKOUT COMPONENTS =======
+CheckoutService - -> CheckoutValidator : uses
+CheckoutService - -> ReceiptPrinter : uses
+CheckoutService - -> ShippingService : uses
+
+' ======= SHIPPING SERVICE DEPENDENCIES =======
+ShippingService - -> ShippingFeeCalculator : uses
+ShippingService - -> ProcessShipmentPrinting : uses
+ShippingService - -> ExtractShippableItems : uses
+
+' ======= RELATIONSHIPS WITH MULTIPLICITY =======
+
+' === Inheritance Relationships ===
+Product <|- - ShippableProduct
+Product <|- - NonShippableProduct
+
+ShippableProduct <|- - Cheese
+ShippableProduct <|- - Biscuits
+ShippableProduct <|- - TV
+ShippableProduct <|- - Mobile
+NonShippableProduct <|- - ScratchCard
+
+' === Interface Implementations ===
+ShippableProduct ..|> Shippable
+Cheese ..|> Expirable
+Biscuits ..|> Expirable
+
+' === Composition: Cart owns CartItems (1 Cart → 0..* CartItems) ===
+Cart "1" *- - "0..*" CartItem : owns
+
+' === Strong Association: CartItem refers to Product (1 CartItem → 1 Product) ===
+CartItem "1" - -> "1" Product : uses
+
+' === Service Dependencies ===
+CheckoutService "1" - -> "1" Cart : uses
+CheckoutService "1" - -> "1" Customer : uses
+
+' === Method calls (dependencies) ===
+CheckoutService ..> CartCalculator : calls
+
+' === External dependencies (Domain Layer) ===
+CheckoutValidator ..> Customer : validates
+CheckoutValidator ..> Cart : validates
+ReceiptPrinter ..> Customer : prints
+ReceiptPrinter ..> Cart : prints
+CartCalculator ..> Cart : calculates
+ShippingService ..> Cart : processes
+ShippingFeeCalculator ..> CartItem : calculates
+ProcessShipmentPrinting ..> CartItem : prints
+ExtractShippableItems ..> Cart : extracts
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+<style>
+  root {
+    BackgroundColor white
+    FontColor black
+    FontName Verdana
+    HyperLinkColor blue
+    LineColor black
+    LineThickness 1
+    Margin 5
+  }
+  caption {
+    LineThickness 0
+  }
+  footer {
+    LineThickness 0
+  }
+  header {
+    LineThickness 0
+  }
+  node {
+    MaximumWidth 300
+  }
+  title {
+    FontSize 22
+    LineThickness 0
+  }
+</style>
+
+skinparam ArrowLollipopColor black
+skinparam BackgroundColor white
+skinparam DefaultFontName Verdana
+skinparam DefaultMonospacedFontName Courier
+skinparam LifelineStrategy nosolid
+skinparam ParticipantPadding 10
+skinparam SequenceLifeLineBorderColor black
+skinparam Shadowing false
+skinparam UseBetaStyle true
+
+skinparam Activity {
+  BackgroundColor white
+  BarColor black
+  BorderColor black
+  FontColor black
+  FontName Verdana
+}
+skinparam Boundary {
+  FontColor black
+}
+skinparam Box {
+  Padding 5
+}
+skinparam CircledCharacter {
+  FontColor black
+  FontName Courier
+  Radius 9
+}
+skinparam Class {
+  BackgroundColor white
+  BorderColor black
+  FontColor black
+  FontName Verdana
+}
+skinparam ClassAttribute {
+  FontColor black
+  FontName Verdana
+}
+skinparam ClassStereotype {
+  FontColor black
+  FontName Verdana
+}
+skinparam Footer {
+  FontColor black
+  FontName Verdana
+}
+skinparam Header {
+  FontColor black
+  FontName Verdana
+}
+skinparam Hyperlink {
+  Color blue
+}
+skinparam IconPackage {
+  Color black
+  BackgroundColor white
+}
+skinparam IconPrivate {
+  Color black
+  BackgroundColor white
+}
+skinparam IconProtected {
+  Color black
+  BackgroundColor white
+}
+skinparam IconPublic {
+  Color black
+  BackgroundColor white
+}
+skinparam Note {
+  FontColor black
+  FontName Verdana
+}
+skinparam Object {
+  BorderColor black
+}
+skinparam Package {
+  BorderColor black
+  FontColor black
+  FontName Verdana
+}
+skinparam State {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeA {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeC {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeE {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeI {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeN {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam UseCaseStereoType {
+  FontColor black
+  FontName Verdana
+}
+skinparam classAttributeIconSize 0
+skinparam linetype ortho
+
+interface Shippable {
+    +getweight(): double
+    +setweight(weight: double): void
+}
+
+interface Expirable {
+    +isExpired(): boolean
+    +setExpirationDate(date: LocalDate): void
+    +getExpirationDate(): LocalDate
+}
+
+abstract class Product {
+    #name: String
+    #price: double
+    #quantity: int
+
+    +Product(name: String, price: double, quantity: int)
+    +getName(): String
+    +setName(name: String): void
+    +getPrice(): double
+    +setPrice(price: double): void
+    +getQuantity(): int
+    +setQuantity(quantity: int): void
+    +reduceQuantity(quantity: int): void
+}
+
+abstract class ShippableProduct {
+    #weight: double
+    +ShippableProduct(name: String, price: double, quantity: int, weight: double)
+    +getWeight(): double
+}
+
+abstract class NonShippableProduct {
+    +NonShippableProduct(name: String, price: double, quantity: int)
+}
+
+class Cheese {
+    -expirationDate: LocalDate
+    +Cheese(name: String, price: double, quantity: int, weight: double, expirationDate: LocalDate)
+    +getweight(): double
+    +setweight(weight: double): void
+    +getExpirationDate(): LocalDate
+    +setExpirationDate(expirationDate: LocalDate): void
+    +isExpired(): boolean
+}
+
+class Biscuits {
+    -expirationDate: LocalDate
+    +Biscuits(name: String, price: double, quantity: int, weight: double, expirationDate: LocalDate)
+    +getweight(): double
+    +setweight(weight: double): void
+    +getExpirationDate(): LocalDate
+    +setExpirationDate(expirationDate: LocalDate): void
+    +isExpired(): boolean
+}
+
+class TV {
+    +TV(name: String, price: double, quantity: int, weight: double)
+    +getweight(): double
+    +setweight(weight: double): void
+}
+
+class Mobile {
+    +Mobile(name: String, price: double, quantity: int, weight: double)
+    +getweight(): double
+    +setweight(weight: double): void
+}
+
+class ScratchCard {
+    +ScratchCard(name: String, price: double, quantity: int)
+}
+
+class Customer {
+    -id: int
+    -name: String
+    -balance: double
+
+    +Customer(name: String, balance: double)
+    +getId(): int
+    +getName(): String
+    +getBalance(): double
+    +deduct(amount: double): void
+    +hasSufficientBalance(amount: double): boolean
+}
+
+class CartItem {
+    -product: Product
+    -quantity: int
+
+    +CartItem(product: Product, quantity: int)
+    +getProduct(): Product
+    +getQuantity(): int
+}
+
+class Cart {
+    -items: List<CartItem>
+
+    +Cart()
+    +addProduct(product: Product, quantity: int): void
+    +getItems(): List<CartItem>
+    +isEmpty(): boolean
+    +clear(): void
+}
+
+class ShippingService {
+    -feeCalculator: ShippingFeeCalculator
+    -processShipmentPrinting: ProcessShipmentPrinting
+    -extractShippableItems: ExtractShippableItems
+
+    +ShippingService()
+    +extractShippableItems(cart: Cart): List<CartItem>
+    +calculateShippingFees(items: List<CartItem>): double
+    +processShipment(items: List<CartItem>): void
+}
+
+class ShippingFeeCalculator {
+    -baseFee: double
+    +ShippingFeeCalculator(baseFee: double)
+    +calculate(items: List<CartItem>): double
+}
+
+class ProcessShipmentPrinting {
+    +processShipment(items: List<CartItem>): void
+}
+
+class ExtractShippableItems {
+    +extractShippableItems(cart: Cart): List<CartItem>
+}
+
+class CheckoutService {
+    -validator: CheckoutValidator
+    -printer: ReceiptPrinter
+    -shippingService: ShippingService
+
+    +CheckoutService(shippingService: ShippingService)
+    +processCheckout(customer: Customer, cart: Cart): void
+}
+
+class CheckoutValidator {
+    +validate(customer: Customer, cart: Cart): void
+}
+
+class ReceiptPrinter {
+    +print(customer: Customer, cart: Cart, shippingFees: double): void
+}
+
+class CartCalculator {
+    +{static} calculateSubtotal(cart: Cart): double
+}
+
+CheckoutService - -> CheckoutValidator : uses
+CheckoutService - -> ReceiptPrinter : uses
+CheckoutService - -> ShippingService : uses
+
+ShippingService - -> ShippingFeeCalculator : uses
+ShippingService - -> ProcessShipmentPrinting : uses
+ShippingService - -> ExtractShippableItems : uses
+
+
+Product <|- - ShippableProduct
+Product <|- - NonShippableProduct
+
+ShippableProduct <|- - Cheese
+ShippableProduct <|- - Biscuits
+ShippableProduct <|- - TV
+ShippableProduct <|- - Mobile
+NonShippableProduct <|- - ScratchCard
+
+ShippableProduct ..|> Shippable
+Cheese ..|> Expirable
+Biscuits ..|> Expirable
+
+Cart "1" *- - "0..*" CartItem : owns
+
+CartItem "1" - -> "1" Product : uses
+
+CheckoutService "1" - -> "1" Cart : uses
+CheckoutService "1" - -> "1" Customer : uses
+
+CheckoutService ..> CartCalculator : calls
+
+CheckoutValidator ..> Customer : validates
+CheckoutValidator ..> Cart : validates
+ReceiptPrinter ..> Customer : prints
+ReceiptPrinter ..> Cart : prints
+CartCalculator ..> Cart : calculates
+ShippingService ..> Cart : processes
+ShippingFeeCalculator ..> CartItem : calculates
+ProcessShipmentPrinting ..> CartItem : prints
+ExtractShippableItems ..> Cart : extracts
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 17:01:30 UTC 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>
