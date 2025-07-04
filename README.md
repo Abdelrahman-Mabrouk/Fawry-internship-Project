@@ -153,8 +153,7 @@ Each product extends the `Product` class and implements interfaces like `Shippab
 
 ## 📸 UML Class Diagram
 
-> *(Insert your diagram here as an image:)*
-> `![UML Diagram](./assets/Class-Diagram.svg)`
+> ![UML Diagram](./assets/Class-Diagram.svg)
 
 ---
 
