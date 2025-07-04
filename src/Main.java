@@ -9,7 +9,7 @@ import java.time.LocalDate;
 public class Main {
     public static void main(String[] args) {
         Customer customer = new Customer("Abdelrahman", 100000.0);
-        Cart cart = new Cart();
+        Cart cart = Cart.getInstance();
 
         // Uncomment to test: Expired product
         // Cheese expiredCheese = new Cheese("Expired Cheese", 80.0, 5, 0.2, LocalDate.of(2020, 1, 1));

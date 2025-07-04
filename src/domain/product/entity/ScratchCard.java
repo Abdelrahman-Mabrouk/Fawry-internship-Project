@@ -1,7 +1,9 @@
 package domain.product.entity;
 
 
-public class ScratchCard extends Product {
+import domain.product.type.NonShippableProduct;
+
+public class ScratchCard extends NonShippableProduct {
 
     public ScratchCard(String name, double price, int quantity) {
         super(name, price, quantity);
