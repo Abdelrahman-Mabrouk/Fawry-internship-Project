@@ -7,35 +7,30 @@ import domain.product.entity.*;
 import java.time.LocalDate;
 
 public class Main {
-
     public static void main(String[] args) {
-
-        Customer customer = new Customer("Abdelrahman", 2000.0);
-
+        Customer customer = new Customer("Abdelrahman", 100000.0);
         Cart cart = new Cart();
 
-        Cheese cheese = new Cheese("Cheddar", 100.0, 10, 2.5, LocalDate.of(2025, 1, 1));
-        Biscuits biscuits = new Biscuits("Oreo", 50.0, 15, 0.5, LocalDate.of(2024, 12, 30));
-        TV tv = new TV("Samsung TV", 1500.0, 3, 10.0);
-        Mobile mobile = new Mobile("iPhone", 900.0, 5, 0.3);
-        ScratchCard card = new ScratchCard("Vodafone 100", 100.0, 20);
+        Biscuits biscuits = new Biscuits("Biscuits", 150.0, 10, 700, LocalDate.of(2027, 1, 1)); // 700g لكل واحدة
+        Cheese cheese = new Cheese("Cheese", 100.0, 10, 200, LocalDate.of(2027, 1, 1));
+        TV tv = new TV("TV", 5000.0, 5, 3000);
+        Mobile mobile = new Mobile("Mobile", 3000.0, 8, 300);
+        ScratchCard card = new ScratchCard("Scratch Card", 100.0, 20);
 
         cart.addProduct(cheese, 2);
-        cart.addProduct(biscuits, 3);
-        cart.addProduct(tv, 1);
-        cart.addProduct(card, 1);
+        cart.addProduct(biscuits, 1);
+        cart.addProduct(tv, 5);
+        cart.addProduct(mobile, 3);
+        cart.addProduct(card, 2);
 
-        // 5. تنفيذ Checkout
         ShippingService shippingService = new ShippingService();
         CheckoutService checkoutService = new CheckoutService(shippingService);
 
         try {
             checkoutService.processCheckout(customer, cart);
         } catch (RuntimeException e) {
-            System.out.println("\n Checkout Failed: " + e.getMessage());
+            System.out.println("Checkout failed: " + e.getMessage());
         }
-
-        // 6. عرض الرصيد المتبقي
-        System.out.printf("\n Remaining Balance: %.2f EGP%n", customer.getBalance());
     }
 }
+

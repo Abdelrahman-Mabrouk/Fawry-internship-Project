@@ -7,8 +7,5 @@ public class ScratchCard extends Product {
         super(name, price, quantity);
     }
 
-    @Override
-    public boolean requiresShipping() {
-        return false;
-    }
+
 }

@@ -1,14 +1,12 @@
 package domain.product.entity;
 
-import domain.product.interfaces.Shippable;
+import domain.product.type.ShippableProduct;
 
-public class Mobile extends Product implements Shippable {
+public class Mobile extends ShippableProduct {
 
-    private double weight;
 
     public Mobile(String name, double price, int quantity, double weight) {
-        super(name, price, quantity);
-        this.weight = weight;
+        super(name, price, quantity,weight);
     }
 
     @Override
@@ -21,8 +19,4 @@ public class Mobile extends Product implements Shippable {
         this.weight = weight;
     }
 
-    @Override
-    public boolean requiresShipping() {
-        return true;
-    }
 }

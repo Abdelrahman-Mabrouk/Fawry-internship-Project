@@ -1,7 +1,7 @@
 package domain.customer.entity;
 
 public class Customer {
-    private static int id = 0;
+    private static int id = 1;
     private String name;
     private double balance;
     public Customer(String name, double balance) {

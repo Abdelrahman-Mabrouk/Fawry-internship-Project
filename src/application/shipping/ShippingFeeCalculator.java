@@ -1,7 +1,6 @@
 package application.shipping;
 
-import domain.product.entity.Product;
-import domain.product.interfaces.Shippable;
+import domain.cart.entity.CartItem;
 import domain.product.type.ShippableProduct;
 
 import java.util.List;
@@ -14,11 +13,13 @@ public class ShippingFeeCalculator {
         this.ratePerKg = ratePerKg;
     }
 
-    public double calculate(List<ShippableProduct> items) {
-        double totalWeight = 0;
-        for (ShippableProduct item : items) {
-            totalWeight += item.getPrice();
+    public double calculate(List<CartItem> items) {
+        int totalWeight = 0;
+        ShippableProduct product ;
+        for (CartItem item : items) {
+            product = (ShippableProduct) item.getProduct();
+            totalWeight += product.getWeight() * item.getQuantity();
         }
-        return totalWeight * ratePerKg;
+        return (totalWeight/1000) * ratePerKg;
     }
 }

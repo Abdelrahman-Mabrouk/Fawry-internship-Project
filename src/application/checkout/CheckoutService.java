@@ -2,10 +2,9 @@ package application.checkout;
 
 import application.cart.CartCalculator;
 import domain.cart.entity.Cart;
+import domain.cart.entity.CartItem;
 import domain.customer.entity.Customer;
-import domain.product.interfaces.Shippable;
 import application.shipping.ShippingService;
-import domain.product.type.ShippableProduct;
 
 import java.util.List;
 
@@ -24,7 +23,7 @@ public class CheckoutService {
     public void processCheckout(Customer customer, Cart cart) {
         validator.validate(customer, cart);
 
-        List<ShippableProduct> itemsToShip = shippingService.extractShippableItems(cart);
+        List<CartItem> itemsToShip = shippingService.extractShippableItems(cart);
         double shippingFees = shippingService.calculateShippingFees(itemsToShip);
 
         shippingService.processShipment(itemsToShip);

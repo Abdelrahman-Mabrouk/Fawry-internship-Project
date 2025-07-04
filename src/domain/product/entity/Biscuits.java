@@ -1,17 +1,16 @@
 package domain.product.entity;
 
 import domain.product.interfaces.Expirable;
-import domain.product.interfaces.Shippable;
+import domain.product.type.ShippableProduct;
+
 import java.time.LocalDate;
 
-public class Biscuits extends Product implements Shippable, Expirable {
+public class Biscuits extends ShippableProduct implements  Expirable {
 
-    private double weight;
     private LocalDate expirationDate;
 
     public Biscuits(String name, double price, int quantity, double weight, LocalDate expirationDate) {
-        super(name, price, quantity);
-        this.weight = weight;
+        super(name, price, quantity,weight);
         this.expirationDate = expirationDate;
     }
 
@@ -40,8 +39,5 @@ public class Biscuits extends Product implements Shippable, Expirable {
         return expirationDate.isBefore(LocalDate.now());
     }
 
-    @Override
-    public boolean requiresShipping() {
-        return true;
-    }
+
 }

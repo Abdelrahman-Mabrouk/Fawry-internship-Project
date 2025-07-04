@@ -10,7 +10,7 @@ import application.cart.CartCalculator;
 public class ReceiptPrinter {
 
     public void print(Customer customer, Cart cart, double shippingFees) {
-        System.out.println("\n🧾 Receipt");
+        System.out.println("\nReceipt");
         System.out.println("Customer: " + customer.getName() + " (ID: " + customer.getId() + ")");
         System.out.println("-----------------------------------");
 
