@@ -66,6 +66,15 @@ src/
 ```
 
 ---
+---
+
+
+## 📸 UML Class Diagram
+
+> ![UML Diagram](./assets/Class-Diagram.svg)
+
+---
+
 
 ## 🧱 Key Components
 
@@ -151,11 +160,6 @@ Each product extends the `Product` class and implements interfaces like `Shippab
 
 ---
 
-## 📸 UML Class Diagram
-
-> ![UML Diagram](./assets/Class-Diagram.svg)
-
----
 
 ## 🚀 Project Status
 
