@@ -183,56 +183,71 @@ src/
 ├── InsufficientBalanceException.java
 └── OutOfStockException.java
 ```
-```
+
 
 ### Example Usage
 
+
+
 ```java
-// Customer setup
-Customer customer = new Customer("Abdelrahman", 100000.0);
-Cart cart = Cart.getInstance();
+public static void main(String[] args) {
 
-// Product creation
-Cheese cheese = new Cheese("Cheese", 100.0, 10, 200, LocalDate.of(2027, 1, 1));
-Biscuits biscuits = new Biscuits("Biscuits", 150.0, 10, 700, LocalDate.of(2027, 1, 1));
-TV tv = new TV("TV", 5000.0, 50, 3000);
-Mobile mobile = new Mobile("Mobile", 3000.0, 8, 300);
-ScratchCard card = new ScratchCard("Scratch Card", 100.0, 20);
+    //======================== 1. Threshold-Based Strategy ================================
+    Customer customer = ApplicationContext.createCustomer("Mabrouk",100000);
+    Cart cart = ApplicationContext.prepareCart(customer);
 
-// Add products to cart
-cart.addProduct(cheese, 2);
-cart.addProduct(biscuits, 1);
-cart.addProduct(tv, 5);
-cart.addProduct(mobile, 3);
-cart.addProduct(card, 2);
+    System.out.println("1. Threshold-Based Shipping Strategy:");
+    CheckoutService checkoutService1 = ApplicationContext.initializeWithThresholdStrategy();
+
+    try {
+        checkoutService1.processCheckout(customer, cart);
+    } catch (RuntimeException e) {
+        System.out.println("Checkout failed: " + e.getMessage());
+    }
+
+    //======================== 2. Weight-Based Strategy ================================
+    System.out.println("\n" + "=".repeat(50) + "\n");
+    System.out.println("2. Weight-Based Shipping Strategy:");
+
+    Customer customer2 = ApplicationContext.createCustomer("Mohamed",200000);
+
+    Cart cart2 = ApplicationContext.prepareCart(customer);;
+    CheckoutService checkoutService2 = ApplicationContext.initializeWithWeightStrategy();
+
+    try {
+        checkoutService2.processCheckout(customer2, cart2);
+    } catch (RuntimeException e) {
+        System.out.println("Checkout failed: " + e.getMessage());
+    }
+}
 ```
+
 
 ### Sample Output
 
-```
-=== DEMONSTRATING SHIPPING STRATEGY PATTERN ===
 
+```
 1. Threshold-Based Shipping Strategy:
 
 Processing Shipment:
-2x Cheese          400.00
-1x Biscuits        700.00
+2x Cheese          0.40
+1x Biscuits        0.70
 1x TV              3000.00
 3x Mobile          900.00
-Total package weight 5.0Kg
+Total package weight 3.9011Kg
 
 Receipt
-Customer: Abdelrahman (ID: 1)
+Customer: Mabrouk (ID: 1)
 -----------------------------------
 2x Cheese          200.00
 1x Biscuits        150.00
-1x TV              50.00
+1x TV              5000.00
 3x Mobile          9000.00
 2x Scratch Card    200.00
 -----------------------------------
-Subtotal:        9600.00
+Subtotal:        14550.00
 Shipping:        0.00
-Total:           9600.00
+Total:           14550.00
 ===================================
 
 ==================================================
@@ -240,23 +255,24 @@ Total:           9600.00
 2. Weight-Based Shipping Strategy:
 
 Processing Shipment:
-2x Cheese          400.00
-1x Biscuits        700.00
+2x Cheese          0.40
+1x Biscuits        0.70
 1x TV              3000.00
-1x Mobile          300.00
-Total package weight 4.4Kg
+3x Mobile          900.00
+Total package weight 3.9011Kg
 
 Receipt
-Customer: Abdelrahman (ID: 1)
+Customer: Mohamed (ID: 2)
 -----------------------------------
 2x Cheese          200.00
 1x Biscuits        150.00
-1x TV              50.00
-1x Mobile          3000.00
+1x TV              5000.00
+3x Mobile          9000.00
+2x Scratch Card    200.00
 -----------------------------------
-Subtotal:        3400.00
-Shipping:        100.00
-Total:           3500.00
+Subtotal:        14550.00
+Shipping:        90.00
+Total:           14640.00
 ===================================
 ```
 #### **📊 Strategy Comparison:**
