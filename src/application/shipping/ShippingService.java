@@ -7,14 +7,14 @@ import java.util.List;
 
 public class ShippingService {
 
-    private final ShippingFeeCalculator feeCalculator;
+    private final ShippingFeeStrategy feeCalculator;
     private final ProcessShipmentPrinting processShipmentPrinting;
     private final ExtractShippableItems extractShippableItems;
 
-    public ShippingService() {
+    public ShippingService(ShippingFeeStrategy shippingFeeStrategy) {
         this.processShipmentPrinting = new ProcessShipmentPrinting();
         this.extractShippableItems = new ExtractShippableItems();
-        this.feeCalculator = new ShippingFeeCalculator(30.0);
+        this.feeCalculator = shippingFeeStrategy;
     }
 
     public List<CartItem> extractShippableItems(Cart cart) {

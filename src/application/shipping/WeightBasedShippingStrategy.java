@@ -5,11 +5,11 @@ import domain.product.type.ShippableProduct;
 
 import java.util.List;
 
-public class ShippingFeeCalculator {
+public class WeightBasedShippingStrategy implements ShippingFeeStrategy{
 
     private final double ratePerKg;
 
-    public ShippingFeeCalculator(double ratePerKg) {
+    public WeightBasedShippingStrategy(double ratePerKg) {
         this.ratePerKg = ratePerKg;
     }
 
