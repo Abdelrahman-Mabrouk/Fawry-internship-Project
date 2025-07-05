@@ -1,4 +1,4 @@
-package application.checkout;
+package application.checkout.validator;
 
 import domain.cart.entity.Cart;
 import domain.cart.entity.CartItem;
@@ -9,18 +9,27 @@ import exception.*;
 
 import application.cart.CartCalculator;
 
-public class CheckoutValidator {
+public class CheckoutValidator implements IValidator {
 
     public void validate(Customer customer, Cart cart) {
+        emptyValidator(customer,cart);
+        sufficientValidator(customer,cart);
+        expiredValidator(customer,cart);
+        outOfStockValidator(customer,cart);
+
+    }
+    public void emptyValidator(Customer customer, Cart cart) {
         if (cart.isEmpty()) {
             throw new EmptyCartException();
         }
-
+    }
+    public void sufficientValidator(Customer customer, Cart cart) {
         double subtotal = CartCalculator.calculateSubtotal(cart);
         if (!customer.hasSufficientBalance(subtotal)) {
             throw new InsufficientBalanceException();
         }
-
+    }
+    public void expiredValidator(Customer customer, Cart cart) {
         for (CartItem item : cart.getItems()) {
             Product product = item.getProduct();
 
@@ -31,6 +40,11 @@ public class CheckoutValidator {
                 }
             }
 
+        }
+    }
+    public void outOfStockValidator(Customer customer, Cart cart) {
+        for (CartItem item : cart.getItems()) {
+            Product product = item.getProduct();
             if (item.getQuantity() > product.getQuantity()) {
                 throw new OutOfStockException(product.getName());
             }

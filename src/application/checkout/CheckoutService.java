@@ -1,6 +1,9 @@
 package application.checkout;
 
 import application.cart.CartCalculator;
+import application.checkout.Printer.IPrinter;
+import application.checkout.Printer.ReceiptPrinter;
+import application.checkout.validator.IValidator;
 import domain.cart.entity.Cart;
 import domain.cart.entity.CartItem;
 import domain.customer.entity.Customer;
@@ -10,13 +13,13 @@ import java.util.List;
 
 public class CheckoutService {
 
-    private final CheckoutValidator validator;
-    private final ReceiptPrinter printer;
+    private final IValidator validator;
+    private final IPrinter printer;
     private final ShippingService shippingService;
 
-    public CheckoutService(ShippingService shippingService) {
-        this.validator = new CheckoutValidator();
-        this.printer = new ReceiptPrinter();
+    public CheckoutService(ShippingService shippingService , IValidator validator , IPrinter printer) {
+        this.validator = validator;
+        this.printer = printer;
         this.shippingService = shippingService;
     }
 
@@ -32,8 +35,7 @@ public class CheckoutService {
         double total = subtotal + shippingFees;
         customer.deduct(total);
 
-        cart.getItems().forEach(item ->
-                item.getProduct().reduceQuantity(item.getQuantity()));
+        cart.getItems().forEach(item -> item.getProduct().reduceQuantity(item.getQuantity()));
 
         printer.print(customer, cart, shippingFees);
 
