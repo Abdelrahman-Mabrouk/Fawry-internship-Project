@@ -29,7 +29,7 @@ public class CheckoutService {
         List<CartItem> itemsToShip = shippingService.extractShippableItems(cart);
         double shippingFees = shippingService.calculateShippingFees(itemsToShip);
 
-        shippingService.processShipment(itemsToShip);
+        shippingService.processShipmentPrint(itemsToShip);
 
         double subtotal = CartCalculator.calculateSubtotal(cart);
         double total = subtotal + shippingFees;
