@@ -177,44 +177,85 @@ src/
 ### Example Usage
 
 ```java
-// Create customer and cart
-Customer customer = new Customer("John Doe", 1000.0);
-Cart cart = new Cart();
+// Customer setup
+Customer customer = new Customer("Abdelrahman", 100000.0);
+Cart cart = Cart.getInstance();
+
+// Product creation
+Cheese cheese = new Cheese("Cheese", 100.0, 10, 200, LocalDate.of(2027, 1, 1));
+Biscuits biscuits = new Biscuits("Biscuits", 150.0, 10, 700, LocalDate.of(2027, 1, 1));
+TV tv = new TV("TV", 5000.0, 50, 3000);
+Mobile mobile = new Mobile("Mobile", 3000.0, 8, 300);
+ScratchCard card = new ScratchCard("Scratch Card", 100.0, 20);
 
 // Add products to cart
-Cheese cheese = new Cheese("Aged Cheddar", 15.99, 5, 0.5, LocalDate.of(2024, 12, 31));
-TV tv = new TV("Smart TV 55\"", 599.99, 2, 15.0);
 cart.addProduct(cheese, 2);
-cart.addProduct(tv, 1);
-
-// Process checkout
-ShippingService shippingService = new ShippingService();
-CheckoutService checkoutService = new CheckoutService(shippingService);
-checkoutService.processCheckout(customer, cart);
+cart.addProduct(biscuits, 1);
+cart.addProduct(tv, 5);
+cart.addProduct(mobile, 3);
+cart.addProduct(card, 2);
 ```
 
 ### Sample Output
 
 ```
-=== CHECKOUT RECEIPT ===
-Customer: John Doe (ID: 1)
-Date: 2024-01-15
+=== DEMONSTRATING SHIPPING STRATEGY PATTERN ===
 
-Items:
-- Aged Cheddar (2x) - $31.98
-- Smart TV 55" (1x) - $599.99
+1. Threshold-Based Shipping Strategy:
 
-Subtotal: $631.97
-Shipping Fees: $45.00
-Total: $676.97
+Processing Shipment:
+2x Cheese          400.00
+1x Biscuits        700.00
+1x TV              3000.00
+3x Mobile          900.00
+Total package weight 5.0Kg
 
-=== SHIPPING NOTICE ===
-Shipping the following items:
-- Aged Cheddar (2x) - Weight: 1.0kg
-- Smart TV 55" (1x) - Weight: 15.0kg
+Receipt
+Customer: Abdelrahman (ID: 1)
+-----------------------------------
+2x Cheese          200.00
+1x Biscuits        150.00
+1x TV              50.00
+3x Mobile          9000.00
+2x Scratch Card    200.00
+-----------------------------------
+Subtotal:        9600.00
+Shipping:        0.00
+Total:           9600.00
+===================================
 
-Checkout completed successfully!
+==================================================
+
+2. Weight-Based Shipping Strategy:
+
+Processing Shipment:
+2x Cheese          400.00
+1x Biscuits        700.00
+1x TV              3000.00
+1x Mobile          300.00
+Total package weight 4.4Kg
+
+Receipt
+Customer: Abdelrahman (ID: 1)
+-----------------------------------
+2x Cheese          200.00
+1x Biscuits        150.00
+1x TV              50.00
+1x Mobile          3000.00
+-----------------------------------
+Subtotal:        3400.00
+Shipping:        100.00
+Total:           3500.00
+===================================
 ```
+#### **📊 Strategy Comparison:**
+
+| Strategy | Order Value | Shipping Fee | Total |
+|----------|-------------|--------------|-------|
+| **Threshold-Based** | $9,600 | $0.00 (Free) | $9,600 |
+| **Weight-Based** | $3,400 | $100.00 | $3,500 |
+
+The output clearly shows how different shipping strategies affect the final cost, demonstrating the flexibility and extensibility of the Strategy pattern implementation.
 
 ## 🎯 SOLID Principles Implementation
 
