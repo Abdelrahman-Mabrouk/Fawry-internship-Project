@@ -161,9 +161,12 @@ src/
 │   │
 │   ├── shipping/
 │   │   ├── ShippingService.java    # Shipping orchestration
-│   │   ├── ShippingFeeCalculator.java
+│   │   ├── ShippingFeeStrategy.java # Strategy interface
+│   │   ├── WeightBasedShippingStrategy.java
+│   │   ├── ThresholdBasedFreeShipping.java
 │   │   ├── ProcessShipmentPrinting.java
 │   │   └── ExtractShippableItems.java
+│   │
 │   │
 │   └── cart/
 │       └── CartCalculator.java     # Cart calculations
