@@ -1,7 +1,6 @@
 # 🛒 E-Commerce Checkout System
 
 [![Java](https://img.shields.io/badge/Java-17+-orange.svg)](https://openjdk.java.net/)
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Architecture](https://img.shields.io/badge/Architecture-Clean%20Architecture-green.svg)](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
 [![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen.svg)]()
 
@@ -120,58 +119,70 @@ CheckoutValidator
 
 ```
 src/
-├── domain/                          # Core business logic
-│   ├── cart/
-│   │   └── entity/
-│   │       ├── Cart.java           # Shopping cart implementation
-│   │       └── CartItem.java       # Individual cart items
-│   │
+├── Main.java
+├── bootstrap/
+│   └── ApplicationContext.java
+├── domain/
 │   ├── customer/
 │   │   └── entity/
-│   │       └── Customer.java       # Customer entity with balance
-│   │
-│   ├── product/
-│   │   ├── entity/                 # Concrete product implementations
-│   │   │   ├── Cheese.java
-│   │   │   ├── Biscuits.java
-│   │   │   ├── TV.java
-│   │   │   ├── Mobile.java
-│   │   │   └── ScratchCard.java
-│   │   │
-│   │   ├── interfaces/             # Product behavior contracts
-│   │   │   ├── Shippable.java
-│   │   │   └── Expirable.java
-│   │   │
-│   │   └── type/                   # Abstract product categories
-│   │       ├── Product.java        # Base product class
-│   │       ├── ShippableProduct.java
-│   │       └── NonShippableProduct.java
-│   │
-│   └── exception/                  # Custom business exceptions
-│       ├── OutOfStockException.java
-│       ├── ExpiredProductException.java
-│       ├── InsufficientBalanceException.java
-│       └── EmptyCartException.java
-│
-├── application/                     # Business logic orchestration
+│   │       └── Customer.java
+│   ├── cart/
+│   │   └── entity/
+│   │       ├── Cart.java
+│   │       ├── CartManager.java
+│   │       └── CartItem.java
+│   └── product/
+│       ├── entity/
+│       │   ├── Product.java
+│       │   ├── Cheese.java
+│       │   ├── Biscuits.java
+│       │   ├── TV.java
+│       │   ├── Mobile.java
+│       │   └── ScratchCard.java
+│       ├── type/
+│       │   ├── ShippableProduct.java
+│       │   ├── NonShippableProduct.java
+│       │   └── PerishableProduct.java
+│       ├── interfaces/
+│       │   ├── Shippable.java
+│       │   └── Expirable.java
+│       └── factory/
+│           └── ProductFactory.java
+├── application/
+│   ├── cart/
+│   │   ├── CartCalculator.java
+│   │   └── CartItemCalculator.java
 │   ├── checkout/
-│   │   ├── CheckoutService.java    # Main checkout orchestration
-│   │   ├── CheckoutValidator.java  # Validation logic
-│   │   └── ReceiptPrinter.java     # Receipt generation
-│   │
-│   ├── shipping/
-│   │   ├── ShippingService.java    # Shipping orchestration
-│   │   ├── ShippingFeeStrategy.java # Strategy interface
-│   │   ├── WeightBasedShippingStrategy.java
-│   │   ├── ThresholdBasedFreeShipping.java
-│   │   ├── ProcessShipmentPrinting.java
-│   │   └── ExtractShippableItems.java
-│   │
-│   │
-│   └── cart/
-│       └── CartCalculator.java     # Cart calculations
-│
-└── Main.java                       # Application entry point
+│   │   ├── CheckoutService.java
+│   │   ├── factory/
+│   │   │   └── CheckoutServiceFactory.java
+│   │   ├── validator/
+│   │   │   ├── IValidator.java
+│   │   │   └── CheckoutValidator.java
+│   │   └── Printer/
+│   │       ├── IPrinter.java
+│   │       └── ReceiptPrinter.java
+│   └── shipping/
+│       ├── ShippingService.java
+│       └── shippingServiceFactory/
+│           └── ShippingServiceFactory.java
+│       ├── shippingFeeStrategy/
+│       │   ├── ShippingFeeStrategy.java
+│       │   ├── WeightBasedShippingStrategy.java
+│       │   └── ThresholdBasedFreeShipping.java
+│       ├── processShipmentPrinting/
+│       │   ├── IProcessShipmentPrinting.java
+│       │   └── ProcessShipmentPrinting.java
+│       ├── extractShippableItems/
+│       │   ├── IExtractShippableItems.java
+│       │   └── ExtractShippableItems.java
+│       
+└── exception/
+├── EmptyCartException.java
+├── ExpiredProductException.java
+├── InsufficientBalanceException.java
+└── OutOfStockException.java
+```
 ```
 
 ### Example Usage
@@ -429,141 +440,19 @@ public class ScratchCard extends NonShippableProduct {
 
 ## 🎯 Design Patterns
 
+### 📦 Design Patterns Used by Class
 
-### 1. Strategy Pattern (Shipping Calculations)
-The shipping system implements the **Strategy Pattern** through the `ShippingFeeStrategy` interface:
+| Class / Component                   | Design Pattern Used            | Description |
+|------------------------------------|--------------------------------|-------------|
+| `ProductFactory`                   | **Factory Pattern** 🏭         | Responsible for creating concrete product instances (Cheese, TV, etc.) from type input. |
+| `ShippingServiceFactory`           | **Factory Pattern** 🏭         | Centralizes creation of `ShippingService` with default wiring for extractors and printers. |
+| `CheckoutServiceFactory`           | **Factory Pattern** 🏭         | Builds `CheckoutService` with injected dependencies (shipping, printer, validator). |
+| `ShippingFeeStrategy` (interface)  | **Strategy Pattern** 🔀        | Allows switching between different shipping cost calculation methods. |
+| `CartManager`                      | **Facade Pattern** 🧱          | Provides a simplified interface to operate on cart (add, update, subtotal...) without exposing internals. |
+| `Cart` (Singleton version)         | **Singleton Pattern** 🧍‍♂️      | Ensures a single cart instance per user/session for centralized management. |
+| `ApplicationContext`               | **Builder Pattern + DI** 🛠️    | Composes services and dependencies in a clean, maintainable way; simulates manual Dependency Injection. |
+| `CheckoutService`                  | **Dependency Injection** 💉    | Depends on interfaces (IShippingService, IValidator, IPrinter) to follow DIP and promote testability. |
 
-#### **Current Interface Definition:**
-```java
-public interface ShippingFeeStrategy {
-    double calculate(List<CartItem> items);
-}
-```
-
-#### **Concrete Implementations:**
-
-**Weight-Based Shipping Strategy:**
-```java
-public class WeightBasedShippingStrategy implements ShippingFeeStrategy {
-    private final double ratePerKg;
-    
-    public WeightBasedShippingStrategy(double ratePerKg) {
-        this.ratePerKg = ratePerKg;
-    }
-    
-    @Override
-    public double calculate(List<CartItem> items) {
-        int totalWeight = 0;
-        ShippableProduct product;
-        for (CartItem item : items) {
-            product = (ShippableProduct) item.getProduct();
-            totalWeight += product.getWeight() * item.getQuantity();
-        }
-        return (totalWeight/1000) * ratePerKg;
-    }
-}
-```
-
-**Threshold-Based Free Shipping Strategy:**
-```java
-public class ThresholdBasedFreeShipping implements ShippingFeeStrategy {
-    private final double threshold = 500.0;
-    private final double flatRate = 30.0;
-    
-    @Override
-    public double calculate(List<CartItem> items) {
-        double subtotal = 0;
-        for (CartItem item : items) {
-            subtotal += item.getProduct().getPrice() * item.getQuantity();
-        }
-        return subtotal >= threshold ? 0.0 : flatRate;
-    }
-}
-```
-
-#### **Usage in ShippingService:**
-```java
-public class ShippingService {
-    private final ShippingFeeStrategy feeCalculator;
-    private final ProcessShipmentPrinting processShipmentPrinting;
-    private final ExtractShippableItems extractShippableItems;
-    
-    public ShippingService(ShippingFeeStrategy shippingFeeStrategy) {
-        this.processShipmentPrinting = new ProcessShipmentPrinting();
-        this.extractShippableItems = new ExtractShippableItems();
-        this.feeCalculator = shippingFeeStrategy;
-    }
-    
-    public double calculateShippingFees(List<CartItem> items) {
-        return feeCalculator.calculate(items);
-    }
-}
-```
-
-#### **Benefits:**
-- **Easy Strategy Switching**: Can switch between weight-based and threshold-based shipping
-- **Extensible**: New strategies can be added without modifying existing code
-- **Testable**: Each strategy can be tested independently
-- **Open/Closed Principle**: Open for extension, closed for modification
-- **Single Responsibility**: Each strategy focuses only on fee calculation
-
-### 2. Singleton Pattern (Cart Implementation)
-The `Cart` class implements the **Singleton Pattern** with **Double-Checked Locking** to ensure only one cart instance exists throughout the application in a thread-safe manner:
-
-#### **Implementation:**
-```java
-public class Cart {
-    private static Cart instance;
-    private List<CartItem> items;
-    
-    private Cart() {
-        this.items = new ArrayList<>();
-    }
-    
-    /**
-     * Returns the singleton instance of the Cart.
-     * Uses Double-Checked Locking to ensure that
-     * only one instance is created in a thread-safe way.
-     */
-    public static Cart getInstance() {
-        if (instance == null) {
-            synchronized (Cart.class) {
-                if (instance == null) {
-                    instance = new Cart();
-                }
-            }
-        }
-        return instance;
-    }
-    
-    // Other cart methods...
-}
-```
-
-#### **Usage:**
-```java
-// Instead of: Cart cart = new Cart();
-Cart cart = Cart.getInstance(); // Always returns the same instance
-```
-
-#### **Benefits:**
-- **Single Instance**: Ensures only one cart exists in the application
-- **Global Access**: Cart can be accessed from anywhere in the application
-- **Memory Efficiency**: Prevents multiple cart instances from consuming memory
-- **State Consistency**: All parts of the application work with the same cart state
-- **Thread Safety**: Double-Checked Locking ensures thread-safe initialization
-
-#### **Double-Checked Locking Benefits:**
-- **Performance**: Synchronization only occurs during the first creation
-- **Thread Safety**: Prevents multiple threads from creating separate instances
-- **Efficiency**: Subsequent calls don't require synchronization overhead
-- **Best Practice**: Industry-standard pattern for thread-safe singletons
-
-#### **How Double-Checked Locking Works:**
-1. **First Check**: `if (instance == null)` - Quick check without synchronization
-2. **Synchronization**: `synchronized (Cart.class)` - Only if instance might be null
-3. **Second Check**: `if (instance == null)` - Double-check inside synchronized block
-4. **Creation**: `instance = new Cart()` - Create instance only once
 
 
 ## 🚀 Installation
@@ -621,6 +510,15 @@ We welcome contributions! Please follow these steps:
    ```
 5. **Open a Pull Request**
 
+### Contribution Guidelines
+- Follow the existing code style and conventions
+- Add tests for new functionality
+- Update documentation as needed
+- Ensure all tests pass before submitting
+
+## 📄 License
+
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
 ## 👨‍💻 Author
 
@@ -628,7 +526,7 @@ We welcome contributions! Please follow these steps:
 - 🎓 Computer & AI Student
 - 🏢 Fawry Quantum Internship Trainee
 - 🔗 [LinkedIn](https://www.linkedin.com/in/abdelrahman-mabrouk-2b579026b)
-- 📧 [Email](mailto:abdelrahmanmabrouk89.2@gmail.com)
+- 📧 [Email](mailto:abdelrahman.mabrouk@example.com)
 
 ## 🙏 Acknowledgments
 
