@@ -18,5 +18,13 @@ public class CartItem {
     public int getQuantity() {
         return quantity;
     }
+    // to edit or set product
+    public void setProduct(Product product) {
+        this.product = product;
+    }
+    // to edit or set quantity
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
 
 }
