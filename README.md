@@ -78,6 +78,7 @@ This project follows **Clean Architecture** principles with clear separation of 
 This project includes comprehensive UML class diagrams that visualize the system architecture and relationships:
 
 ### 🏗️ Complete System Architecture
+
 ![Complete Class Diagram](./assets/Class-Diagram.svg)
 
 **Features:**
