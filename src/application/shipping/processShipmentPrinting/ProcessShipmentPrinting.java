@@ -1,16 +1,19 @@
-package application.shipping;
+package application.shipping.processShipmentPrinting;
 
+import application.checkout.Printer.IPrinter;
+import domain.cart.entity.Cart;
 import domain.cart.entity.CartItem;
+import domain.customer.entity.Customer;
 import domain.product.type.ShippableProduct;
 
 import java.util.List;
 
 
-public class ProcessShipmentPrinting {
+public class ProcessShipmentPrinting implements IProcessShipmentPrinting {
     double totalItemsWeight = 0.0;
 
 
-    public void processShipment(List<CartItem> items) {
+    public void processShipmentPrint(List<CartItem> items)  {
         ShippableProduct product = null;
         System.out.println("\nProcessing Shipment:");
         for (CartItem item : items) {
@@ -21,4 +24,5 @@ public class ProcessShipmentPrinting {
         System.out.println("Total package weight " + totalItemsWeight/1000 + "Kg");
 
     }
+
 }

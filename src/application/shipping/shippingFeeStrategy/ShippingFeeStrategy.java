@@ -1,4 +1,4 @@
-package application.shipping;
+package application.shipping.shippingFeeStrategy;
 
 import domain.cart.entity.CartItem;
 

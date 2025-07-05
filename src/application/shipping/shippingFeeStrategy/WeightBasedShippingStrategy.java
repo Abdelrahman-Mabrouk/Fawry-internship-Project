@@ -1,11 +1,11 @@
-package application.shipping;
+package application.shipping.shippingFeeStrategy;
 
 import domain.cart.entity.CartItem;
 import domain.product.type.ShippableProduct;
 
 import java.util.List;
 
-public class WeightBasedShippingStrategy implements ShippingFeeStrategy{
+public class WeightBasedShippingStrategy implements ShippingFeeStrategy {
 
     private final double ratePerKg;
 

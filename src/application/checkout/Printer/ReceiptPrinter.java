@@ -1,4 +1,4 @@
-package application.checkout;
+package application.checkout.Printer;
 
 import domain.cart.entity.Cart;
 import domain.cart.entity.CartItem;
@@ -7,7 +7,7 @@ import domain.product.entity.Product;
 import application.cart.CartItemCalculator;
 import application.cart.CartCalculator;
 
-public class ReceiptPrinter {
+public class ReceiptPrinter implements IPrinter{
 
     public void print(Customer customer, Cart cart, double shippingFees) {
         System.out.println("\nReceipt");

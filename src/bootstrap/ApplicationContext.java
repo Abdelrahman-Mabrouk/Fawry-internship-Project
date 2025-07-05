@@ -1,36 +1,27 @@
 package bootstrap;
 
 import application.checkout.CheckoutService;
-import application.checkout.Printer.ReceiptPrinter;
-import application.checkout.validator.CheckoutValidator;
-import application.shipping.ShippingFeeStrategy;
+import application.checkout.factory.CheckoutServiceFactory;
+
 import application.shipping.ShippingService;
-import application.shipping.ThresholdBasedFreeShipping;
-import application.shipping.WeightBasedShippingStrategy;
+
+import application.shipping.shippingServiceFactory.ShippingServiceFactory;
 import domain.cart.entity.Cart;
 import domain.cart.entity.CartManager;
 import domain.customer.entity.Customer;
 import domain.product.entity.*;
 import domain.product.factory.ProductFactory;
 
-import java.time.LocalDate;
-
 public class ApplicationContext {
 
     public static CheckoutService initializeWithThresholdStrategy() {
-        ShippingFeeStrategy strategy = new ThresholdBasedFreeShipping();
-        ShippingService shippingService = new ShippingService(strategy);
-        CheckoutValidator validator = new CheckoutValidator();
-        ReceiptPrinter printer = new ReceiptPrinter();
-        return new CheckoutService(shippingService, validator, printer);
+        ShippingService shippingService = ShippingServiceFactory.createShippingServiceWithThreshold();
+        return  CheckoutServiceFactory.create(shippingService);
     }
 
     public static CheckoutService initializeWithWeightStrategy() {
-        ShippingFeeStrategy strategy = new WeightBasedShippingStrategy(25.0);
-        ShippingService shippingService = new ShippingService(strategy);
-        CheckoutValidator validator = new CheckoutValidator();
-        ReceiptPrinter printer = new ReceiptPrinter();
-        return new CheckoutService(shippingService, validator, printer);
+        ShippingService shippingService = ShippingServiceFactory.createShippingServiceWithWeight(30);
+        return CheckoutServiceFactory.create(shippingService);
     }
 
     public static Customer createCustomer(String name, int balance) {
