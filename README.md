@@ -16,9 +16,8 @@ A robust, scalable E-commerce checkout system built with **Clean Architecture** 
 - [Usage](#-usage)
 - [SOLID Principles Implementation](#-solid-principles-implementation)
 - [Design Patterns](#-design-patterns)
-- [Testing](#-testing)
 - [Contributing](#-contributing)
-- [License](#-license)
+
 
 ## ✨ Features
 
@@ -280,8 +279,8 @@ Total:           14640.00
 
 | Strategy | Order Value | Shipping Fee | Total |
 |----------|-------------|--------------|-------|
-| **Threshold-Based** | $9,600 | $0.00 (Free) | $9,600 |
-| **Weight-Based** | $3,400 | $100.00 | $3,500 |
+| **Threshold-Based** | $14,550 | $0.00 (Free) | $14,550 |
+| **Weight-Based** | $14,550 | $90.00 | $14,640 |
 
 The output clearly shows how different shipping strategies affect the final cost, demonstrating the flexibility and extensibility of the Strategy pattern implementation.
 
@@ -532,10 +531,6 @@ We welcome contributions! Please follow these steps:
 - Add tests for new functionality
 - Update documentation as needed
 - Ensure all tests pass before submitting
-
-## 📄 License
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
 ## 👨‍💻 Author
 
