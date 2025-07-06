@@ -12,10 +12,10 @@ A robust, scalable E-commerce checkout system built with **Clean Architecture** 
 - [Architecture](#-architecture)
 - [UML Diagrams](#-uml-diagrams)
 - [Project Structure](#-project-structure)
-- [Installation](#-installation)
-- [Usage](#-usage)
 - [SOLID Principles Implementation](#-solid-principles-implementation)
 - [Design Patterns](#-design-patterns)
+- [Installation](#-installation)
+- [Usage](#-usage)
 - [Contributing](#-contributing)
 
 
